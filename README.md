@@ -9,7 +9,7 @@ In order to be considered for the PHP position, you must complete the following 
 
 - Please note that this will require some basic [PHP](http://www.php.net).
 
-- You will need to have [PHP](http://www.php.net/) installed to complete this task. You can use any PHP framework that you would like (CodeIgniter, Cake, Fuel, etc).
+- You will need to have [PHP](http://www.php.net/) installed to complete this task. You can use any PHP framework that you would like (Laravel, CodeIgniter, Cake, Fuel, etc).
 
 ## Task
 
