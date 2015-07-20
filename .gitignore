@@ -1,2 +1,5 @@
 .DS_STORE
 .vagrant
+components/
+_site/
+source/tmp/

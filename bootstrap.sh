@@ -22,6 +22,10 @@ npm update -g bower
 cd /var/www/source && composer install
 cd /var/www/source && bower install | xargs echo
 
+# Set the local timezone
+echo "America/Phoenix" | sudo tee /etc/timezone
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+
 # Apply branding
 cat <<"EOF" | sudo tee /etc/motd.tail
                                ,|
@@ -50,5 +54,5 @@ cat <<"EOF" | sudo tee /etc/motd.tail
             `\_|                   (,~~
                                     \~\
                                      ~~
-                      example-php-challenge as completed by @C1V0
+            example-php-challenge as completed by @C1V0
 EOF
