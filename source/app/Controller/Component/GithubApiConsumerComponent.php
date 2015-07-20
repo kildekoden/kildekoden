@@ -30,28 +30,28 @@ class GithubApiConsumerComponent extends Component {
  *
  * @var string
  */
-	public $baseUrl = 'https://api.github.com/repos/';
+	protected $baseUrl = 'https://api.github.com/repos/';
 
 /**
  * Username associated with the repository.
  *
  * @var string
  */
-	public $username = '';
+	protected $username = '';
 
 /**
  * Repository name.
  *
  * @var string
  */
-	public $repository = '';
+	protected $repository = '';
 
 /**
  * Response object container.
  *
  * @var array|object
  */
-	public $response = [];
+	private $response = [];
 
 /**
  * Class constructor
@@ -79,9 +79,7 @@ class GithubApiConsumerComponent extends Component {
 		} else {
 			throw new InvalidArgumentException('Both username and repository name required to query the GitHub API.');
 		}
-
-		// continue here
-
+		return $this->sanitize($response);
 	}
 
 /**
@@ -97,16 +95,39 @@ class GithubApiConsumerComponent extends Component {
  * Makes the API call to GitHub.
  *
  * @param string $url
- * @return array|object Response data
+ * @return array Response data
  */
 	public function makeRequest($url) {
 		$HttpSocket = new HttpSocket();
 		$HttpSocket->config['ssl_verify_peer'] = false;
-		$results = $HttpSocket->get($requestUrl);
+		$results = $HttpSocket->get($url);
 		if ($results->code == 404) {
 			return $results;
 		}
 		return json_decode($results->body, true);
+	}
+
+/**
+ * Sanitizes the response data.
+ *
+ * @param array $raw Raw response data
+ * @return array Sanitized response data
+ */
+	protected function sanitize($raw) {
+		$new = [];
+		for ($i = 0; $i < 30; $i++) {
+			$new[] = [
+				'sha' => $raw[$i]['sha'],
+				'timestamp' => $raw[$i]['commit']['author']['date'],
+				'url' => $raw[$i]['html_url'],
+				'author_username' => $raw[$i]['author']['login'],
+				'author_email' => $raw[$i]['commit']['author']['email'],
+				'author_url' => $raw[$i]['author']['html_url'],
+				'author_avatar' => $raw[$i]['author']['avatar_url'],
+				'message' => trim(preg_replace('/\s+/', ' ', substr($raw[$i]['commit']['message'], 0, 252))) . '...',
+			];
+		}
+		return $new;
 	}
 
 }

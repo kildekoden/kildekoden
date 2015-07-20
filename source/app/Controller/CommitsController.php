@@ -33,7 +33,13 @@ class CommitsController extends AppController {
 	 *
 	 * @var array
 	 */
-	public $components = ['RequestHandler'];
+	public $components = [
+		'RequestHandler',
+		'GithubApiConsumer' => [
+			'username' => 'Joyent',
+			'repository' => 'node',
+		],
+	];
 
 	/**
 	 * Recent Commits
@@ -43,7 +49,7 @@ class CommitsController extends AppController {
 	 * @return void
 	 */
 	public function recent() {
-		$this->set('test', 'This is a test.');
+		$this->set('test', $this->GithubApiConsumer->getRecentCommits());
 		$this->response->header('Access-Control-Allow-Origin', '*');
 		$this->set('_serialize', $this->Commit->find('all'));
 	}
