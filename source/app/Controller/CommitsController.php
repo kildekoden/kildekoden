@@ -41,16 +41,37 @@ class CommitsController extends AppController {
 		],
 	];
 
+/**
+ * Commit data
+ *
+ * @var array
+ */
+	public $commits = [];
+
+/**
+ * beforeFilter override
+ *
+ * @return void
+ */
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->commits = $this->GithubApiConsumer->getRecentCommits();
+	}
+
 	/**
 	 * Recent Commits
 	 *
 	 * A placeholder action for displaying recent commits.
 	 *
+	 * @throws NotFoundException when no commit data is available
 	 * @return void
 	 */
 	public function recent() {
-		$this->set('test', $this->GithubApiConsumer->getRecentCommits());
-		$this->response->header('Access-Control-Allow-Origin', '*');
-		$this->set('_serialize', $this->Commit->find('all'));
+		if (isset($this->commits)) {
+			$this->set(['commits' => $this->commits, '_serialize' => 'commits']);
+			$this->response->header('Access-Control-Allow-Origin', '*'); # CORS workaround
+		} else {
+			throw new NotFoundException('Something went wrong and the commit data was not loaded.');
+		}
 	}
 }

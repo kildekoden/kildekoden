@@ -6,4 +6,4 @@
  */
  ?><h1>User / Project</h1>
 
-<p><?php Debugger::dump($test); ?></p>
+<p><?php Debugger::dump($commits); ?></p>
