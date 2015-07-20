@@ -22,6 +22,9 @@ npm update -g bower
 cd /var/www/source && composer install
 cd /var/www/source && bower install | xargs echo
 
+# Import the database schema
+ mysql -u root -proot scotchbox < "/var/www/design/data/schema.sql"
+
 # Set the local timezone
 echo "America/Phoenix" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
