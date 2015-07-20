@@ -14,7 +14,8 @@
     "ad7six/dsn": "0.3.*"
   },
   "require-dev": {
-    "cakephp/debug_kit" : "2.2.*"
+    "cakephp/debug_kit" : "2.2.*",
+    "phpunit/phpunit": "3.7.32"
   },
   "minimum-stability": "dev",
   "config": {
