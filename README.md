@@ -1,44 +1,20 @@
-## PHP Programming Task
+# example-php-challenge
 
-In order to be considered for the PHP position, you must complete the following task. 
+A take on [Picmonic/example-php-challenge](https://github.com/Picmonic/example-php-challenge) done by @[C1V0](https://www.twitter.com/c1v0). An example CakePHP app which displays the most recent commits to a repository.
 
-*Note: This task should take no longer than 1-3 hours at the most.*
+### Resources
 
-### Prerequisites
+Learn more about the original instructions for this project in [INSTRUCTIONS.md](INSTRUCTIONS.md). A [Developer Notes](https://github.com/chrisvogt/example-php-challenge/wiki/Developer-Notes) wiki page has been created to provide a technical overview for this project.
 
-- Experience with [PHP](http://www.php.net) frameworks (Laravel, Symfony, Fuel, Zend, Yii, etc.)
-- Understanding of CSS frameworks and grid systems (Bootstrap, Pure, etc.)
-- Database knowledge (MySQL, MongoDB, Postgres, etc.)
+You may also wish to [preview the static template](http://chrisvogt.github.io/example-php-challenge/static/) live on GitHub Pages.
 
-## Task
+### Screenshot
+[![Project Directory](screenshot.png)](http://chrisvogt.github.io/example-php-challenge/static/)
 
-1. Fork this repository
-2. Create a *source* folder to contain your code. 
-3. In the *source* directory, please create a PHP web application using a framework (Laravel, Symfony, Fuel, Zend, Yii, etc.)
-4. Your application should accomplish the following:
-  - Connect to the [Github API](http://developer.github.com/)
-  - Find the [joyent/node](https://github.com/joyent/node) repository
-  - Find the 25 most recent commits
-  - Create a model and store the 25 most recent commits in the database. Make sure to avoid any duplicates.
-  - Create a basic template and utilize a CSS framework (Bootstrap, Pure, etc.)
-  - Create a route and view which displays the recent commits by author from the database. 
-  - If the commit hash ends in a number, color that row light blue (#E6F1F6).
-  
-### Once Complete
-1. Create a SETUP.md in the base directory with setup instructions.
-2. Send us a pull request, we will review your code and get back to you
+### License
 
-## Key Points We Are Looking For
-  - Demonstration of core MVC patterns
-  - Quality commit history
-  - Ability to use libraries
-  - Ability to create basic model and retrieve information from the databse
-  
-## Bonus Points
-While not required any of the following will add some major bonus points to your submission:
-- Setup an asset pipeline with Gulp, Grunt, etc.
-- Use Angular
-- Use Bower
-- Use Composer
-- Utilize a vagrant box
-- Create a set of provsioning scripts with Puppet, Chef, Ansible, etc.
+[MIT License](LICENSE.md)
+
+___
+
+<img src="https://cdn.rawgit.com/jekyll/brand/master/jekyll-logo-light-transparent.png" alt="Jekyll logo" height="70" align="right"> <img src="http://bower.io/img/bower-logo.svg" alt="Made with Bower" height="70" align="right"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-composer-transparent.png" alt="Made with Composer" height="70" align="right"> <img src="https://cdn.rawgit.com/chrisvogt/wowchar-info/master/webroot/img/cake-logo-smaller.png" alt="Made with CakePHP" height="70" align="right"> <img src="https://cdn.rawgit.com/chrisvogt/wowchar-info/master/webroot/img/php-med-trans.png" alt="Made with PHP" height="70" align="right">
