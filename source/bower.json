@@ -1,0 +1,24 @@
+{
+  "name": "example-php-challenge",
+  "version": "0.9.0",
+  "homepage": "https://github.com/chrisvogt/example-php-challenge",
+  "description": "Example CakePHP app for Picmonic.",
+  "main": "webroot/index.php",
+  "keywords": [
+    "cakephp",
+    "prototype",
+    "example"
+  ],
+  "authors": [
+    "Chris Vogt <mail@chrisvogt.me>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
