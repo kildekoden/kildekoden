@@ -61,8 +61,36 @@ class GithubApiConsumerComponent extends Component {
  */
 	public function __construct(ComponentCollection $collection, $settings = array()) {
 		parent::__construct($collection, $settings);
-		$this->username = $settings['username'];
-		$this->repository = $settings['repository'];
+		if ( isset($settings['username']) && isset($settings['repository']) ) {
+			$this->username = $settings['username'];
+			$this->repository = $settings['repository'];
+		}
+	}
+
+/**
+ * Setter method for the username to query.
+ *
+ * @param string $username The username for the query.
+ * @return boolean
+ */
+	public function setUsername($username) {
+		$this->username = $username;
+		if ($this->username = $username) {
+			return true;
+		} else { return false; }
+	}
+
+/**
+ * Setter method for the repository.
+ *
+ * @param string $repository The repository for the query.
+ * @return boolean
+ */
+	public function setRepository($repository) {
+		$this->repository = $repository;
+		if ($this->repository = $repository) {
+			return true;
+		} else { return false; }
 	}
 
 /**
@@ -97,7 +125,7 @@ class GithubApiConsumerComponent extends Component {
  * @param string $url
  * @return array Response data
  */
-	public function makeRequest($url) {
+	protected function makeRequest($url) {
 		$HttpSocket = new HttpSocket();
 		$HttpSocket->config['ssl_verify_peer'] = false;
 		$results = $HttpSocket->get($url);
