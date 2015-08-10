@@ -54,4 +54,9 @@ class AppController extends Controller {
 		'Paginator' => ['settings' => ['paramType' => 'querystring', 'limit' => 30]]
 	];
 
+	public function beforeFilter() {
+		Parent::beforeFilter();
+		$this->layout = 'bootstrap';
+	}
+
 }

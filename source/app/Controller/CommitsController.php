@@ -73,6 +73,8 @@ class CommitsController extends AppController {
 		} else {
 			throw new NotFoundException('Something went wrong and the commit data was not loaded.');
 		}
+		$this->set(['endpoint' => Router::url() . '.json']);
+		$this->set(compact(['username', 'repository']));
 	}
 
 	protected function handleCommits($username = null, $repository = null) {
