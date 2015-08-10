@@ -32,6 +32,15 @@ Router::connect('/', ['controller' => 'pages', 'action' => 'display', 'home']);
  */
 Router::connect('/pages/*', ['controller' => 'pages', 'action' => 'display']);
 
+Router::connect(
+	'/commits/:action/:username/:repository',
+	['controller' => 'Commits'],
+	[
+		'username' 	 => '[a-zA-Z0-9-_]',
+		'repository' => '[a-zA-Z0-9-_]'
+	]
+);
+
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

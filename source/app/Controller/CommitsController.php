@@ -55,7 +55,6 @@ class CommitsController extends AppController {
  */
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->commits = $this->GithubApiConsumer->getRecentCommits();
 	}
 
 	/**
@@ -66,12 +65,21 @@ class CommitsController extends AppController {
 	 * @throws NotFoundException when no commit data is available
 	 * @return void
 	 */
-	public function recent() {
+	public function recent($username, $repository) {
+		$this->handleCommits($username, $repository);
 		if (isset($this->commits)) {
 			$this->set(['commits' => $this->commits, '_serialize' => 'commits']);
 			$this->response->header('Access-Control-Allow-Origin', '*'); # CORS workaround
 		} else {
 			throw new NotFoundException('Something went wrong and the commit data was not loaded.');
 		}
+	}
+
+	protected function handleCommits($username = null, $repository = null) {
+		if ( isset($username) && isset($repository) ) {
+			$this->GithubApiConsumer->setUsername($username);
+			$this->GithubApiConsumer->setRepository($repository);
+		}
+		$this->commits = $this->GithubApiConsumer->getRecentCommits();
 	}
 }
