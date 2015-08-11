@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><span class="octicon octicon-code"></span> ghrepo.info</a>
+			<?php echo $this->Html->link('<span class="octicon octicon-code"></span> <strong>GHREPO</strong>.info', '/', ['escape' => false, 'class' => 'navbar-brand']); ?>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">

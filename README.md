@@ -2,8 +2,9 @@
 
 A project inspired by [Picmonic/example-php-challenge](https://github.com/Picmonic/example-php-challenge). Queries the GitHub API to pull, store, and display repository information. Specifically the recent commits, for now. Created by @[C1V0](https://www.twitter.com/c1v0).
 
-* Preview the [static front end](http://chrisvogt.github.io/ghrepo-info/static/) live on GitHub Pages.
-* Preview a live app demo, based on the current master branch, at [ghrepo.info](http://ghrepo.info/chrisvogt/projects).
+* View the [static front end layout](http://chrisvogt.github.io/ghrepo-info/static/) live on GitHub Pages.
+* View a live app demo, based on the current master branch, at [ghrepo.info](http://ghrepo.info/r/chrisvogt/projects).
+* View the [ghrepo.info](http://ghrepo.info) home page.
 
 ### Resources
 

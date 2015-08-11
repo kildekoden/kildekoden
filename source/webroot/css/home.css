@@ -1,0 +1,54 @@
+/**
+ * Overrides
+ */
+#navbar {
+	border-bottom: 1px solid #989898;
+}
+
+/**
+ * Canvas
+ */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+#large-header {
+	background-image: url('http://res.cloudinary.com/chrisvogt/image/upload/v1439252118/ghrepo-info/photo/milky-way1200.jpg');
+}
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+.large-header #search {
+	position: absolute;
+	margin: 0 auto;
+	display: block;
+	z-index: 88;
+}
+.large-header .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+	font-weight: 600;
+}
+.main-title .thin {
+	font-weight: 100;
+}
+
+@media only screen and (max-width : 768px) {
+	.large-header .main-title {
+		font-size: 3em;
+	}
+}

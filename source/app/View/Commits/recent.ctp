@@ -4,20 +4,12 @@
  *
  * @author Chris Vogt <mail@chrisvogt.me>
  */
-$this->Html->script([
-		'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',
-		'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js',
+$this->Html->script([ // scripts for this view
 		'https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js',
 		'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js',
 		'repository.jquery'
 	],
 	array('block' => 'scriptBottom'));
-$this->Html->css([
-		'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css',
-		'styles',
-		'https://cdnjs.cloudflare.com/ajax/libs/octicons/2.4.1/octicons.min.css',
-		'https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css'
-	], ['inline' => false]);
 ?>
 <script>var endpoint = '<?php echo $endpoint; ?>';</script>
 <div class="container-fluid">
