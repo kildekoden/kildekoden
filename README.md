@@ -12,13 +12,24 @@ Review the original instructions for this challenge in [INSTRUCTIONS.md](INSTRUC
 
 A [Developer Notes](https://github.com/chrisvogt/example-php-challenge/wiki/Developer-Notes) wiki page has also been created to provide a technical summary.
 
-### Screenshot
+### Screenshots
 
-[![Project Directory](screenshot.png)](http://chrisvogt.github.io/example-php-challenge/static/)
+[![Project Directory](/source/webroot/img/screenshot.home.jpg)](http://chrisvogt.github.io/example-php-challenge/static/)
+
+[![Project Directory](/source/webroot/img/screenshot.result.jpg)](http://chrisvogt.github.io/example-php-challenge/static/)
 
 ### License
 
 [MIT License](LICENSE.md)
+
+Copyright (c) 2015 Chris Vogt https://www.chrisvogt.me
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
 ___
 
