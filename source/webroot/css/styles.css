@@ -16,6 +16,16 @@ body {
 	padding-bottom: 10px;
 	border-bottom: 1px solid #eee;
 }
+.keyup {
+	position: relative;
+	left: -22px;
+}
+.keyup.invalid {
+	color: #685180;
+}
+.keyup.valid {
+	color: green;
+}
 
 /*
  * Top navigation
