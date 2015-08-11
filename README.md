@@ -1,22 +1,21 @@
-# ghrepo.info
+# GHREPO.info » GitHub Repository Information
 
-A project inspired by [Picmonic/example-php-challenge](https://github.com/Picmonic/example-php-challenge). Queries the GitHub API to pull, store, and display repository information. Specifically the recent commits, for now. Created by @[C1V0](https://www.twitter.com/c1v0).
+An example CakePHP app that displays repository information from the GitHub API. Created by @[C1V0](https://www.twitter.com/c1v0).
 
-* View the [static front end layout](http://chrisvogt.github.io/ghrepo-info/static/) live on GitHub Pages.
-* View a live app demo, based on the current master branch, at [ghrepo.info](http://ghrepo.info/r/chrisvogt/projects).
-* View the [ghrepo.info](http://ghrepo.info) home page.
+* Home page @ [ghrepo.info](http://ghrepo.info).
+* Results page @ [ghrepo.info/r/chrisvogt/ghrepo-info](http://ghrepo.info/r/chrisvogt/ghrepo-info).
 
 ### Resources
 
-Review the original instructions for this challenge in [INSTRUCTIONS.md](INSTRUCTIONS.md).
-
-A [Developer Notes](https://github.com/chrisvogt/example-php-challenge/wiki/Developer-Notes) wiki page has also been created to provide a technical summary.
+A [wiki page](https://github.com/chrisvogt/example-php-challenge/wiki/Developer-Notes) is available with more technical information.
 
 ### Screenshots
 
-[![Project Directory](/source/webroot/img/screenshot.home.jpg)](http://chrisvogt.github.io/example-php-challenge/static/)
+[![Project Directory](/source/webroot/img/screenshot.home.jpg)](http://ghrepo.info)
+Home page
 
-[![Project Directory](/source/webroot/img/screenshot.result.jpg)](http://chrisvogt.github.io/example-php-challenge/static/)
+[![Project Directory](/source/webroot/img/screenshot.result.jpg)](http://ghrepo.info/r/chrisvogt/ghrepo-info)
+Results Page
 
 ### License
 
