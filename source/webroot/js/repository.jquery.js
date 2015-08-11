@@ -13,6 +13,14 @@ $(function() {
               .html(renderTable(data));
         }
     });
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: "https://api.github.com/repos/chrisvogt/projects",
+        success: function (data) {
+            renderStats(data);
+        }
+    });
 
 /**
  * Builds the data table.
@@ -53,5 +61,17 @@ $(function() {
           .text(data['message'].substring(0, 74) + '...')
         )
       );
+    }
+
+/**
+ * Renders the repo stats.
+ *
+ * @param (array) data - Returned from the GitHub API.
+ */
+    function renderStats(data) {
+    	$('.stat-watchers .count').html(data.watchers_count);
+    	$('.stat-forks .count').html(data.forks_count);
+    	$('.stat-stars .count').html(data.stargazers_count);
+    	$('.stat-issues .count').html(data.open_issues_count);
     }
 });

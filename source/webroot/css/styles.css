@@ -109,19 +109,16 @@ body {
 }
 
 /*
- * Placeholder dashboard ideas
+ * Featurettes
  */
-.placeholders {
-	margin-bottom: 30px;
+.stats {
+	margin-bottom: 24px;
 	text-align: center;
 }
-.placeholders h4 {
-	margin-bottom: 0;
+.stat h4 {
+	margin: 0;
 }
-.placeholder {
-	margin-bottom: 20px;
-}
-.placeholder img {
+.feat img {
 	display: inline-block;
 	border-radius: 50%;
 }
@@ -129,16 +126,16 @@ body {
 	transition: color 0.5s ease;
 	color: #CECECE;
 }
-.placeholder:hover .octicon-eye {
+.stat:hover .octicon-eye {
 	color: #2DBDFC;
 }
-.placeholder:hover .octicon-star {
+.stat:hover .octicon-star {
 	color: #CCAC00;
 }
-.placeholder:hover .octicon-repo-forked {
+.stat:hover .octicon-repo-forked {
 	color: #AEAEAE;
 }
-.placeholder:hover .octicon-issue-opened {
+.stat:hover .octicon-issue-opened {
 	color: #CD3F1C;
 }
 
