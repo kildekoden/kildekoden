@@ -77,6 +77,23 @@ class CommitsController extends AppController {
 		$this->set(compact(['username', 'repository']));
 	}
 
+/**
+ * Lookup and return the project path.
+ */
+	public function lookup($userrepo = null) {
+		if (!isset($userrepo) && isset($this->request->data['lookup']['userrepo'])) {
+			$userrepo = preg_replace('/\s+/', '', $this->request->data['lookup']['userrepo']); // trim whitespace
+			if (preg_match('/^[A-Za-z0-9._-]+\/[[A-Za-z0-9._-]+$/', $userrepo)) {
+				$q = explode('/', $userrepo);
+				$this->redirect(Router::url('/', true) . 'r' . DS . $q[0] . DS . $q[1]);
+			} else {
+				throw new InvalidArgumentException('Requires a string in the form of: username/repository.');
+			}
+		} else {
+			throw new InvalidArgumentException('No repository set.');
+		}
+	}
+
 	protected function handleCommits($username = null, $repository = null) {
 		if ( isset($username) && isset($repository) ) {
 			$this->GithubApiConsumer->setUsername($username);

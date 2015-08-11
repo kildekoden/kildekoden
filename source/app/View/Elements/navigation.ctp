@@ -13,9 +13,20 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#">About</a></li>
 			</ul>
-			<form class="navbar-form navbar-right">
-				<input type="text" class="form-control" placeholder="Search...">
-			</form>
-		</div>
+			<?php
+			echo $this->Form->create('lookup', [
+		    'url' 	=> ['controller' => 'commits', 'action' => 'lookup'],
+		    'class' => 'navbar-form navbar-right',
+		    'inputDefaults' => [
+		    	'label' => false,
+		    	'div'		=> false
+		    ]
+			]);
+			echo $this->Form->input('userrepo', [
+				'class' 			=> 'form-control',
+				'placeholder' => 'username/repository'
+			]);
+			echo $this->Form->end(); ?>
 	</div>
+</div>
 </nav>
