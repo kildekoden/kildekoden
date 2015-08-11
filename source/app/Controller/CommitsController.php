@@ -73,6 +73,7 @@ class CommitsController extends AppController {
 		} else {
 			throw new NotFoundException('Something went wrong and the commit data was not loaded.');
 		}
+		$this->set('title_for_layout', 'Details for ' . $username . '/' . $repository);
 		$this->set(['endpoint' => Router::url() . '.json']);
 		$this->set(compact(['username', 'repository']));
 	}

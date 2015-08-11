@@ -11,8 +11,7 @@
  * @package       app.Component.GithubApiConsumer
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-// Scripts for this view
+$this->assign('title', 'GitHub Repository Viewer');
 $this->Html->css('home', ['inline' => false]);
 $this->Html->script([
 	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js',
