@@ -19,7 +19,6 @@ $this->Html->script([
 	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js',
 	'animated-background'
 ], ['block' => 'scriptBottom']);
-
 ?>
 <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>

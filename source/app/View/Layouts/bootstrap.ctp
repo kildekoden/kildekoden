@@ -32,15 +32,23 @@
 			'https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css'
 		], ['inline' => false]);
 
-		echo $this->Html->meta(['name' => 'application-name', 'content' => 'GHREPO.info'], ['inline' => false]);
-		echo $this->Html->meta('author', 'Chris Vogt');
-		echo $this->Html->meta('description', 'Free and open source app that uses PHP and jQuery to display GitHub repository information.', ['inline' => false]);
+		$appDescription = 'A free and open source app that uses PHP and jQuery to display GitHub repository information.';
+
+		echo $this->Html->meta(['name' => 'application-name', 'content' => 'GHREPO.info'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'author', 'content' => 'Chris Vogt'], null, ['inline' => false]);
+		echo $this->Html->meta('description', h($appDescription), ['inline' => false]);
 		echo $this->Html->meta('keywords', 'GitHub, repository, repo, source code, repository information', ['inline' => false]);
 
-		echo $this->Html->meta(['name' => 'og:title', 'content' => 'GitHub Repository Viewer'], ['inline' => false]);
-		echo $this->Html->meta(['name' => 'og:description', 'content' => 'A free and open source app that uses PHP and jQuery to display GitHub repository information.'], ['inline' => false]);
-		echo $this->Html->meta(['name' => 'og:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/ghrepo-info/develop/source/webroot/img/screenshot.home.jpg'], ['inline' => false]);
-		echo $this->Html->meta(['name' => 'og:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/ghrepo-info/develop/source/webroot/img/screenshot.result.jpg'], ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:title', 'content' => 'GitHub Repository Viewer'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:description', 'content' => h($appDescription)], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/ghrepo-info/develop/source/webroot/img/screenshot.home.jpg'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/ghrepo-info/develop/source/webroot/img/screenshot.result.jpg'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:type', 'content' => 'website'], null, ['inline' => false]);
+
+		echo $this->Html->meta(['name' => 'twitter:card', 'content' => 'summary_large_image'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:creator', 'content' => '@C1V0'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:description', 'content' => h($appDescription)], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:site', 'content' => '<?php echo Router::url( $this->here, true ); ?>'], null, ['inline' => false]);
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
