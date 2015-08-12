@@ -16,7 +16,7 @@ $(function() {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "https://api.github.com/repos/chrisvogt/projects",
+        url: "https://api.github.com/repos/" + username + "/" + repository,
         success: function (data) {
             renderStats(data);
         }

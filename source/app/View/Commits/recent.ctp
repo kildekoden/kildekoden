@@ -11,7 +11,11 @@ $this->Html->script([ // scripts for this view
 	],
 	array('block' => 'scriptBottom'));
 ?>
-<script>var endpoint = '<?php echo $endpoint; ?>';</script>
+<script>
+	var endpoint = '<?php echo $endpoint; ?>';
+	var username = '<?php echo $username; ?>';
+	var repository = '<?php echo $repository; ?>';
+</script>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-3 col-md-2 sidebar">
