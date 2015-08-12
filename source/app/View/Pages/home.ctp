@@ -12,7 +12,11 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 $this->assign('title', 'GitHub Repository Viewer');
-$this->Html->css('home', ['inline' => false]);
+$this->Html->css([
+	'home',
+	'https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css'
+	],
+	['inline' => false]);
 $this->Html->script([
 	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js',
 	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js',
@@ -22,5 +26,10 @@ $this->Html->script([
 ?>
 <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>
-    <h1 class="main-title">Repository <span class="thin">Information</span></h1>
+  <h1 class="main-title">Repository <span class="thin">Information</span></h1>
+  <div class="github-fork-ribbon-wrapper right-bottom">
+      <div class="github-fork-ribbon">
+          <a href="https://github.com/chrisvogt/ghrepo-info">Fork me on GitHub</a>
+      </div>
+  </div>
 </div>
