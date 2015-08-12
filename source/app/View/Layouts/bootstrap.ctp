@@ -62,6 +62,8 @@
 	<body>
 		<?php echo $this->element('navigation'); ?>
 		<?php echo $this->fetch('content'); ?>
+
     <?php echo $this->fetch('scriptBottom'); ?>
+    <?php if (env('ANALYTICS')) echo $this->element('analytics'); ?>
   </body>
 </html>
