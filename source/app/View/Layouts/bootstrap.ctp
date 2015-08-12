@@ -47,7 +47,9 @@
 
 		echo $this->Html->meta(['name' => 'twitter:card', 'content' => 'summary_large_image'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:creator', 'content' => '@C1V0'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:site', 'content' => '@C1V0'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:description', 'content' => h($appDescription)], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/ghrepo-info/develop/source/webroot/img/screenshot.home.jpg'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:site', 'content' => '<?php echo Router::url( $this->here, true ); ?>'], null, ['inline' => false]);
 
 		echo $this->fetch('meta');
