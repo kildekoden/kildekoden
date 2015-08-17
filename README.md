@@ -2,12 +2,20 @@
 
 An example CakePHP app that displays repository information from the GitHub API. Created by @[C1V0](https://www.twitter.com/c1v0).
 
-* Home page @ [ghrepo.info](http://ghrepo.info).
-* Results page @ [ghrepo.info/r/chrisvogt/ghrepo-info](http://ghrepo.info/r/chrisvogt/ghrepo-info).
+* Home page @ [http://ghrepo.info](http://ghrepo.info).
+* Results page @ [http://ghrepo.info/r/chrisvogt/ghrepo-info](http://ghrepo.info/r/chrisvogt/ghrepo-info).
 
-### Resources
+### Requirements
 
-A [wiki page](https://github.com/chrisvogt/example-php-challenge/wiki/Developer-Notes) is available with more technical information.
+GHREPO.info requires a web server able to serve `php 5.4+`. `Composer` and `Bower` are used for package management.
+
+As an alternative, a [shell script](bootstrap.sh) has been included to setup and configure this app in a virtual. Just run `vagrant up` and then navigate to [http://192.168.33.10](http://192.168.33.10).
+
+### Configure
+
+_If only demoing this project, you may skip this section._
+
+The [default configuration file](source/app/Config/.env.default) should be copied to `.env`. This new file is where to set _your_ app name, Google Analytics ID, CakePHP salt and cipher seed, debug level, database connection details, etc. Alternatively, these configuration settings may be set in environmental variables.
 
 ### Screenshots
 
