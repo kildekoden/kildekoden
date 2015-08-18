@@ -11,12 +11,13 @@
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
+				<li><a href="#modalAbout" title="About GHREPO.info">About</a></li>
 			</ul>
 			<?php
 			echo $this->Form->create('lookup', [
 		    'url' 	=> ['controller' => 'commits', 'action' => 'lookup'],
 		    'class' => 'navbar-form navbar-right',
+		    'id' 		=> 'lookupDisplayForm',
 		    'inputDefaults' => [
 		    	'label' => false,
 		    	'div'		=> false
@@ -24,7 +25,10 @@
 			]);
 			echo $this->Form->input('userrepo', [
 				'class' 			=> 'form-control',
-				'placeholder' => 'username/repository'
+				'placeholder' => 'username/repository',
+				'data-toggle' => 'tooltip',
+				'data-placement' => 'bottom',
+				'title'				=> 'Must be: username/project'
 			]);
 			echo $this->Form->end(); ?>
 	</div>

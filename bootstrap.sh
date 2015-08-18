@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# -----------------------------
-# Vagrant bootstrap script
-# -----------------------------
+# ---------------------------------
+# GHREPO.info provisioning script
+# ---------------------------------
 
 # Update repositories
 sudo apt-get update && sudo apt-get upgrade -y -q

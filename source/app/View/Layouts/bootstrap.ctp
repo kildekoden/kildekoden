@@ -19,18 +19,26 @@
 	<?php
 		echo $this->Html->meta('favicon.ico', '/favicon-96x96.png', ['type' => 'icon', 'inline' => false]);
 
-		$this->Html->script([
-			'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',
-			'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js',
-			'common.jquery'
-		], ['block' => 'script']);
-
+	/**
+	 * Common stylehseets
+	 */
 		$this->Html->css([
 			'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css',
 			'styles',
-			'https://cdnjs.cloudflare.com/ajax/libs/octicons/2.4.1/octicons.min.css',
-			'https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css'
+			'/components/remodal/dist/remodal.css',
+			'/components/remodal/dist/remodal-default-theme.css',
+			'https://cdnjs.cloudflare.com/ajax/libs/octicons/2.4.1/octicons.min.css'
 		], ['inline' => false]);
+
+	/**
+	 * Common scripts
+	 */
+		$this->Html->script([
+			'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',
+			'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js',
+			'common.jquery',
+			'/components/remodal/dist/remodal.min.js'
+		], ['block' => 'script']);
 
 		$appDescription = 'A free and open source app that uses PHP and jQuery to display GitHub repository information.';
 
@@ -73,6 +81,7 @@
 		<?php echo $this->element('navigation'); ?>
 		<?php echo $this->fetch('content'); ?>
 
+		<?php echo $this->element('modal/about'); ?>
     <?php echo $this->fetch('scriptBottom'); ?>
     <?php if (env('ANALYTICS')) echo $this->element('analytics'); ?>
   </body>
