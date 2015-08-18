@@ -1,9 +1,12 @@
 <?php
 /**
- * Recent commits template
- *
- * @author Chris Vogt <mail@chrisvogt.me>
- */
+* Recent commits template
+*
+* @author Chris Vogt <mail@chrisvogt.me>
+*/
+$this->Html->css([
+	'https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css'
+], ['inline' => false]);
 $this->Html->script([ // scripts for this view
 		'https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js',
 		'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js',
@@ -12,9 +15,9 @@ $this->Html->script([ // scripts for this view
 	array('block' => 'scriptBottom'));
 ?>
 <script>
-	var endpoint = '<?php echo $endpoint; ?>';
-	var username = '<?php echo $username; ?>';
-	var repository = '<?php echo $repository; ?>';
+var endpoint = '<?php echo $endpoint; ?>';
+var username = '<?php echo $username; ?>';
+var repository = '<?php echo $repository; ?>';
 </script>
 <div class="container-fluid">
 	<div class="row">
@@ -25,10 +28,10 @@ $this->Html->script([ // scripts for this view
 		</div>
 		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<h1 class="page-header">
-				<span class="mega-octicon octicon-package"></span>
-				<a href="https://github.com/<?php echo $username; ?>" title="<?php echo $username; ?> on GitHub"><?php echo $username; ?></a>
-				/
-				<a href="https://github.com/<?php echo $username . DS . $repository; ?>" title="<?php echo $repository; ?> on GitHub"><?php echo $repository; ?></a>
+			<span class="mega-octicon octicon-package"></span>
+			<a href="https://github.com/<?php echo $username; ?>" title="<?php echo $username; ?> on GitHub"><?php echo $username; ?></a>
+			/
+			<a href="https://github.com/<?php echo $username . DS . $repository; ?>" title="<?php echo $repository; ?> on GitHub"><?php echo $repository; ?></a>
 			</h1>
 			<div class="row stats">
 				<div class="col-xs-6 col-sm-3 stat stat-watchers">
@@ -56,7 +59,6 @@ $this->Html->script([ // scripts for this view
 					</a>
 				</div>
 			</div>
-
 			<h2 class="sub-header">Recent commits</h2>
 			<div class="table-responsive">
 				<table class="table table-striped">
