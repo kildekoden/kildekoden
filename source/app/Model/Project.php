@@ -2,10 +2,22 @@
 App::uses('AppModel', 'Model');
 
 /**
- * Commit Model
+ * Project Model
  *
+ * PHP ≥5.4
+ *
+ * CHRISVOGT.me : ghrepo-info
+ * Copyright (c) Chris Vogt (http://www.chrisvogt.me)
+ *
+ * Licensed under The MIT License
+ * For full copyright and license information, please see the LICENSE.txt
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @copyright     Copyright (c) 2015 Chris Vogt (http://www.chrisvogt.me)
+ * @link          https://github.com/chrisvogt/example-php-challenge
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-class Commit extends AppModel {
+class Project extends AppModel {
 
 /**
  * Display field

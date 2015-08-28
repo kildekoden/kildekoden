@@ -4,7 +4,7 @@
  *
  * PHP ≥5.4
  *
- * CHRISVOGT.me : example-php-challenge
+ * CHRISVOGT.me : ghrepo-info
  * Copyright (c) Chris Vogt (http://www.chrisvogt.me)
  *
  * Licensed under The MIT License
@@ -18,15 +18,11 @@
 App::uses('AppController', 'Controller');
 
 /**
- * Application Controller
+ * Projects Controller
  *
- * Add your application-wide methods in the class below, your controllers
- * will inherit them.
- *
- * @package		app.Controller.CommitsController
- * @link			http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
+ * @package		app.Controller.ProjectsController
  */
-class CommitsController extends AppController {
+class ProjectsController extends AppController {
 
 	/**
 	 * List of controller components
