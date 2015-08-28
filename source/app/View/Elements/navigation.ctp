@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<?php echo $this->Html->link('<span class="octicon octicon-code"></span> <strong>GHREPO</strong>.info', '/', ['escape' => false, 'class' => 'navbar-brand']); ?>
+			<?php echo $this->Html->link('<span class="mega-octicon octicon-telescope"></span> <strong>GHREPO</strong>.info', '/', ['escape' => false, 'class' => 'navbar-brand']); ?>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -25,10 +25,10 @@
 			]);
 			echo $this->Form->input('userrepo', [
 				'class' 			=> 'form-control',
-				'placeholder' => 'username/repository',
+				'placeholder' => 'Lookup repository...',
 				'data-toggle' => 'tooltip',
 				'data-placement' => 'bottom',
-				'title'				=> 'Must be: username/project'
+				'title'				=> 'Format: username/project'
 			]);
 			echo $this->Form->end(); ?>
 	</div>

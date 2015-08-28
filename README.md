@@ -1,9 +1,9 @@
-# GHREPO.info » GitHub Repository Information
+# GHREPO.info
 
-An example CakePHP app that displays repository information from the GitHub API. Created by @[C1V0](https://www.twitter.com/c1v0).
+An open source hobby project that allows users to lookup repository information fetched from the GitHub API. Created by @[C1V0](https://www.twitter.com/c1v0).
 
 * Home page @ [http://ghrepo.info](http://ghrepo.info).
-* Results page @ [http://ghrepo.info/r/chrisvogt/ghrepo-info](http://ghrepo.info/r/chrisvogt/ghrepo-info).
+* Results page @ [http://ghrepo.info/r/Facebook/hhvm](http://ghrepo.info/r/Facebook/hhvm).
 
 ### Requirements
 

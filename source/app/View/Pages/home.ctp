@@ -28,6 +28,12 @@ $this->Html->script([
 ], ['block' => 'scriptBottom']);
 ?>
 <div id="large-header" class="large-header">
+  <?php echo $this->Html->image('starthere.svg', [
+  						'id' => 'starthere',
+  						'class' => 'hidden-xs hidden-sm',
+  						'alt' => 'Search here to get started',
+  						'width' => 128]); ?>
+
   <canvas id="demo-canvas"></canvas>
   <h1 class="main-title">Repository <span class="thin">Information</span></h1>
   <div class="github-fork-ribbon-wrapper right-bottom">

@@ -1,8 +1,8 @@
 /**
  * Overrides
  */
-#navbar {
-	border-bottom: 1px solid #989898;
+.navbar-fixed-top {
+	border-bottom: 1px solid #aeaeae!important;
 }
 
 /**
@@ -46,9 +46,15 @@
 .main-title .thin {
 	font-weight: 100;
 }
+img#starthere {
+	position: absolute;
+	right: 114px;
+	top: 14px;
+}
 
 @media only screen and (max-width : 768px) {
 	.large-header .main-title {
 		font-size: 3em;
 	}
 }
+

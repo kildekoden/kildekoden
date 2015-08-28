@@ -3,6 +3,13 @@
  * @author Chris Vogt [mail@chrisvogt.me]
  */
 $(function() {
+	/**
+	 * Hide the "start here" marker on form focus.
+	 */
+	 $('#lookupUserrepo').focus(function() {
+	 	$('#starthere').fadeOut();
+	 });
+
     /**
      * Verify the input is in the correct format.
      */
