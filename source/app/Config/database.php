@@ -12,6 +12,9 @@ class DATABASE_CONFIG {
 	public function __construct() {
 		$this->default = DbDsn::parse(env('DATABASE_URL'));
 		$this->test = DbDsn::parse(env('DATABASE_TEST_URL'));
+
+		// Use datasource class in MongoDB plugin
+		$this->default['datasource'] = 'Mongodb.MongodbSource';
 	}
 
 }

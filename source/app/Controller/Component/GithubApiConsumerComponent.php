@@ -104,10 +104,13 @@ class GithubApiConsumerComponent extends Component {
 	public function getRecentCommits() {
 		if (isset($this->username) && isset($this->repository)) {
 			$response = $this->makeRequest($this->buildQuery());
+			if (isset($response->code) && $response->code == '404') {
+				throw new NotFoundException('That repository does not seem to exist.');
+			}
+			return $this->sanitize($response);
 		} else {
 			throw new InvalidArgumentException('Both username and repository name required to query the GitHub API.');
 		}
-		return $this->sanitize($response);
 	}
 
 /**
@@ -143,7 +146,7 @@ class GithubApiConsumerComponent extends Component {
  */
 	protected function sanitize($raw) {
 		$new = [];
-		for ($i = 0; $i < 30; $i++) {
+		for ($i = 0; $i < count($raw); $i++) {
 			$new[] = [
 				'sha' => $raw[$i]['sha'],
 				'timestamp' => $raw[$i]['commit']['author']['date'],

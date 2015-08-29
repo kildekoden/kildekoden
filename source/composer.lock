@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5dfba28e2d23e064e961e5feb7873b36",
+    "hash": "2e97c2f7f014a7c8127b37e56d43fcc6",
     "packages": [
         {
             "name": "ad7six/dsn",
@@ -196,7 +196,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/e22c1563a51d86aac0d5054beee28b4afb60c802",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/049fc2ed6dfd753f38cbf5f35c713d10345af3a3",
                 "reference": "e22c1563a51d86aac0d5054beee28b4afb60c802",
                 "shasum": ""
             },
@@ -251,6 +251,79 @@
                 "update"
             ],
             "time": "2015-06-04 01:53:58"
+        },
+        {
+            "name": "ichikaway/cakephp-mongodb",
+            "version": "dev-cake2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ichikaway/cakephp-mongodb.git",
+                "reference": "9a97fbc1a9d08291319a43eb9b243ce7e4acb07c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ichikaway/cakephp-mongodb/zipball/9a97fbc1a9d08291319a43eb9b243ce7e4acb07c",
+                "reference": "9a97fbc1a9d08291319a43eb9b243ce7e4acb07c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-cake2.0": "2.0.x-dev",
+                    "dev-cake2.2": "2.2.x-dev"
+                },
+                "installer-name": "Mongodb"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yasushi Ichikawa",
+                    "homepage": "http://twitter.com/ichikaway",
+                    "role": "Author"
+                },
+                {
+                    "name": "Andy Dawson",
+                    "homepage": "http://twitter.com/AD7six",
+                    "role": "Author"
+                },
+                {
+                    "name": "predominant",
+                    "homepage": "http://github.com/predominant/",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "jrbasso",
+                    "homepage": "http://github.com/jrbasso/",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "tkyk",
+                    "homepage": "http://github.com/tkyk/",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Various Others",
+                    "homepage": "https://github.com/ichikaway/cakephp-mongodb/graphs/contributors"
+                }
+            ],
+            "description": "MongoDB Datasource for CakePHP",
+            "homepage": "https://github.com/ichikaway/cakephp-mongodb",
+            "keywords": [
+                "cakephp",
+                "datasource",
+                "mongo"
+            ],
+            "time": "2014-06-24 00:47:24"
         },
         {
             "name": "josegonzalez/dotenv",
@@ -731,7 +804,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/000e7fc2653335cd42c6d21405dac1c74224a387",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1a0bd40f71908db4c9d44d308e0008cc44fc5f2f",
                 "reference": "000e7fc2653335cd42c6d21405dac1c74224a387",
                 "shasum": ""
             },
@@ -773,7 +846,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ichikaway/cakephp-mongodb": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

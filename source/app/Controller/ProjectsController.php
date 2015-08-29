@@ -54,28 +54,47 @@ class ProjectsController extends AppController {
 	}
 
 	/**
-	 * Recent Commits
+	 * Project overview
 	 *
-	 * A placeholder action for displaying recent commits.
+	 * Displays an overview of the repository.
 	 *
+	 * @param $username
+	 * @param $repository
 	 * @throws NotFoundException when no commit data is available
 	 * @return void
 	 */
-	public function recent($username, $repository) {
-		$this->handleCommits($username, $repository);
-		if (isset($this->commits)) {
-			$this->set(['commits' => $this->commits, '_serialize' => 'commits']);
-			$this->response->header('Access-Control-Allow-Origin', '*'); # CORS workaround
-		} else {
-			throw new NotFoundException('Something went wrong and the commit data was not loaded.');
+	public function overview($username, $repository) {
+		// load the commit data
+		$this->GithubApiConsumer->setUsername($username);
+		$this->GithubApiConsumer->setRepository($repository);
+		$this->commits = $this->GithubApiConsumer->getRecentCommits();
+
+		// check to see if project is in the database
+		$data = $this->Project->find('first', ['conditions' => [
+			'username' 		=> $username,
+			'repository' 	=> $repository
+		]]);
+		if (!$data && count($this->commits) >= 1) { // if not, store it
+	    $saved = $this->Project->save(['Project' => [
+	    	'provider' 		=> 'gh', // force GitHub, for now
+	      'username' 		=> $username,
+  	    'repository' 	=> $repository
+      ]]);
 		}
+
+		// set the data
+		$this->publishCommits();
 		$this->set('title_for_layout', 'Details for ' . $username . '/' . $repository);
 		$this->set(['endpoint' => Router::url() . '.json']);
-		$this->set(compact(['username', 'repository']));
+		$this->set(compact(['username', 'repository', 'data']));
 	}
 
 /**
  * Lookup and return the project path.
+ *
+ * @param $userrepo The project to lookup
+ * @throws InvalidArgumentException if $userrepo invalid format
+ * @throws InvalidArgumentException if $userrepo not set
  */
 	public function lookup($userrepo = null) {
 		if (!isset($userrepo) && isset($this->request->data['lookup']['userrepo'])) {
@@ -91,11 +110,17 @@ class ProjectsController extends AppController {
 		}
 	}
 
-	protected function handleCommits($username = null, $repository = null) {
-		if ( isset($username) && isset($repository) ) {
-			$this->GithubApiConsumer->setUsername($username);
-			$this->GithubApiConsumer->setRepository($repository);
+/**
+ * Set the commit data for the API endpoint.
+ *
+ * @throws NotFoundException if no commits were found.
+ */
+	protected function publishCommits() {
+		if (isset($this->commits)) {
+			$this->set(['commits' => $this->commits, '_serialize' => 'commits']);
+			$this->response->header('Access-Control-Allow-Origin', '*'); # CORS workaround
+		} else {
+			throw new NotFoundException('Something went wrong and the commit data was not loaded.');
 		}
-		$this->commits = $this->GithubApiConsumer->getRecentCommits();
 	}
 }

@@ -35,7 +35,7 @@ Router::connect('/pages/*', ['controller' => 'pages', 'action' => 'display']);
 
 Router::connect(
 	'/r/*',
-	['controller' => 'Projects', 'action' => 'recent'],
+	['controller' => 'Projects', 'action' => 'overview'],
 	[
 		'username' 	 => '[a-zA-Z0-9-_]',
 		'repository' => '[a-zA-Z0-9-_]'

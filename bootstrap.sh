@@ -21,6 +21,7 @@ npm update -g bower
 # Install dependencies
 cd /var/www/source && composer install
 cd /var/www/source && bower install | xargs echo
+sudo apt-get install php5-dev php5-cli php-pear mongodb-clients php5-mongo -y -q
 
 # Import the database schema
  mysql -u root -proot scotchbox < "/var/www/design/data/schema.sql"
