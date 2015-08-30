@@ -9,6 +9,8 @@ _(Formerly ghrepo-info, or http://ghrepo.info.)_
 
 ### Requirements
 
+<img src="/kildekoden-cli.png" alt="Vagrant CLI example" align="right" style="width: 50%!important;" width="50%">
+
 Required: `php 5.4+` `MongoDB` `Composer` `Bower`
 
 Kildekoden requires a web server able to serve `PHP` with the `MongoDB PHP` driver installed. `Composer` and `Bower` are used for package management. `MongoDB` is used as the database, but you can easily switch to any [CakePHP-supported](http://book.cakephp.org/2.0/en/models/datasources.html#datasources) database without changing much code.
