@@ -27,7 +27,7 @@ $(function() {
             $(this).tooltip('hide');
             $(this).after('<span class="keyup valid octicon octicon-check"></span>');
             $('#lookupDisplayForm').submit(function(e) {
-                window.location.href = "/r/" + q;
+                window.location.href = "/gh/" + q;
             });
         }
     });

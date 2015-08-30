@@ -1,29 +1,29 @@
-# GHREPO.info
+# kildekoden
 
-An open source hobby project that allows users to lookup repository information fetched from the GitHub API. Created by @[C1V0](https://www.twitter.com/c1v0).
+Kildekoden is a hobby project that helps users lookup information for their GitHub projects (soon to support Bitbucket). Created by @[C1V0](https://www.twitter.com/c1v0).
 
-* Home page @ [http://ghrepo.info](http://ghrepo.info).
-* Results page @ [http://ghrepo.info/r/Facebook/hhvm](http://ghrepo.info/r/Facebook/hhvm).
+* Home page @ [http://kildekoden.com](http://kildekoden.com).
+* Results page @ [http://kildekoden.com/gh/Facebook/hhvm](http://kildekoden.com/gh/Facebook/hhvm).
+
+_(Formerly ghrepo-info, or http://ghrepo.info.)_
 
 ### Requirements
 
-GHREPO.info requires a web server able to serve `php 5.4+`. `Composer` and `Bower` are used for package management.
+Required: `php 5.4+` `MongoDB` `Composer` `Bower`
 
-As an alternative, a [shell script](bootstrap.sh) has been included to setup and configure this app in a virtual. Just run `vagrant up` and then navigate to [http://192.168.33.10](http://192.168.33.10).
+Kildekoden requires a web server able to serve `PHP` with the `MongoDB PHP` driver installed. `Composer` and `Bower` are used for package management. `MongoDB` is used as the database, but you can easily switch to any [CakePHP-supported](http://book.cakephp.org/2.0/en/models/datasources.html#datasources) database without changing much code.
+
+A vagrant box and [provisioning script](bootstrap.sh) have been included to help developers get setup quickly with a virtual development environment. Just run `vagrant up` from the root folder then navigate to [http://192.168.33.10](http://192.168.33.10).
 
 ### Configure
 
-_If only demoing this project, you may skip this section._
-
-The [default configuration file](source/app/Config/.env.default) should be copied to `.env`. This new file is where to set _your_ app name, Google Analytics ID, CakePHP salt and cipher seed, debug level, database connection details, etc. Alternatively, these configuration settings may be set in environmental variables.
+Copy the [default configuration file](source/app/Config/.env.default) to `.env`. In this new file set _your_ app name, Google Analytics ID, CakePHP salt and cipher seed, debug level, database connection details, etc. Alternatively, these configuration settings may be set in environmental variables.
 
 ### Screenshots
 
-[![Project Directory](/source/webroot/img/screenshot.home.jpg)](http://ghrepo.info)
-Home page
+[![Project Directory](/source/webroot/img/screenshot.home.jpg)](http://kildekoden.com)
 
-[![Project Directory](/source/webroot/img/screenshot.result.jpg)](http://ghrepo.info/r/chrisvogt/ghrepo-info)
-Results Page
+[![Project Directory](/source/webroot/img/screenshot.result.jpg)](http://kildekode.com/gh/chrisvogt/ghrepo-info)
 
 ### License
 

@@ -4,7 +4,7 @@
  *
  * PHP ≥5.4
  *
- * CHRISVOGT.me : ghrepo-info
+ * CHRISVOGT.me : Kildekoden
  * Copyright (c) Chris Vogt (http://www.chrisvogt.me)
  *
  * Licensed under The MIT License
@@ -12,7 +12,7 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @copyright     Copyright (c) 2015 Chris Vogt (http://www.chrisvogt.me)
- * @link          https://github.com/chrisvogt/example-php-challenge
+ * @link          https://github.com/chrisvogt/kildekoden
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 App::uses('AppController', 'Controller');
@@ -101,7 +101,7 @@ class ProjectsController extends AppController {
 			$userrepo = preg_replace('/\s+/', '', $this->request->data['lookup']['userrepo']); // trim whitespace
 			if (preg_match('/^[A-Za-z0-9._-]+\/[[A-Za-z0-9._-]+$/', $userrepo)) {
 				$q = explode('/', $userrepo);
-				$this->redirect(Router::url('/', true) . 'r' . DS . $q[0] . DS . $q[1]);
+				$this->redirect(Router::url('/', true) . 'gh' . DS . $q[0] . DS . $q[1]);
 			} else {
 				throw new InvalidArgumentException('Requires a string in the form of: username/repository.');
 			}

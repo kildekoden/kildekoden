@@ -34,7 +34,7 @@ Router::connect('/', ['controller' => 'pages', 'action' => 'display', 'home']);
 Router::connect('/pages/*', ['controller' => 'pages', 'action' => 'display']);
 
 Router::connect(
-	'/r/*',
+	'/gh/*',
 	['controller' => 'Projects', 'action' => 'overview'],
 	[
 		'username' 	 => '[a-zA-Z0-9-_]',

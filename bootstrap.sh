@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ---------------------------------
-# GHREPO.info provisioning script
+# Kildekoden provisioning script
 # ---------------------------------
 
 # Update repositories
@@ -24,7 +24,7 @@ cd /var/www/source && bower install | xargs echo
 sudo apt-get install php5-dev php5-cli php-pear mongodb-clients php5-mongo -y -q
 
 # Import the database schema
- mysql -u root -proot scotchbox < "/var/www/design/data/schema.sql"
+# mysql -u root -proot scotchbox < "/var/www/design/data/schema.sql"
 
 # Set the local timezone
 echo "America/Phoenix" | sudo tee /etc/timezone
@@ -32,11 +32,11 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 # Apply branding
 cat <<"EOF" | sudo tee /etc/motd.tail
- ██████╗ ██╗  ██╗██████╗ ███████╗██████╗  ██████╗    ██╗███╗   ██╗███████╗ ██████╗
-██╔════╝ ██║  ██║██╔══██╗██╔════╝██╔══██╗██╔═══██╗   ██║████╗  ██║██╔════╝██╔═══██╗
-██║  ███╗███████║██████╔╝█████╗  ██████╔╝██║   ██║   ██║██╔██╗ ██║█████╗  ██║   ██║
-██║   ██║██╔══██║██╔══██╗██╔══╝  ██╔═══╝ ██║   ██║   ██║██║╚██╗██║██╔══╝  ██║   ██║
-╚██████╔╝██║  ██║██║  ██║███████╗██║     ╚██████╔╝██╗██║██║ ╚████║██║     ╚██████╔╝
- ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚═╝╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝
-                                                                          by @C1V0
+██╗  ██╗██╗██╗     ██████╗ ███████╗██╗  ██╗ ██████╗    ██████╗ ███████╗
+██║ ██╔╝██║██║     ██╔══██╗██╔════╝██║ ██╔╝██╔═══██╗   ██╔══██╗██╔════╝
+█████╔╝ ██║██║     ██║  ██║█████╗  █████╔╝ ██║   ██║   ██║  ██║█████╗
+██╔═██╗ ██║██║     ██║  ██║██╔══╝  ██╔═██╗ ██║   ██║   ██║  ██║██╔══╝
+██║  ██╗██║███████╗██████╔╝███████╗██║  ██╗╚██████╔╝██╗██████╔╝███████╗
+╚═╝  ╚═╝╚═╝╚══════╝╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝╚═════╝ ╚══════╝
+                                                               by @c1v0
 EOF
