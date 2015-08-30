@@ -6,7 +6,7 @@ App::uses('AppModel', 'Model');
  *
  * PHP ≥5.4
  *
- * CHRISVOGT.me : ghrepo-info
+ * CHRISVOGT.me : Kildekoden
  * Copyright (c) Chris Vogt (http://www.chrisvogt.me)
  *
  * Licensed under The MIT License
@@ -14,7 +14,7 @@ App::uses('AppModel', 'Model');
  * Redistributions of files must retain the above copyright notice.
  *
  * @copyright     Copyright (c) 2015 Chris Vogt (http://www.chrisvogt.me)
- * @link          https://github.com/chrisvogt/example-php-challenge
+ * @link          https://github.com/chrisvogt/kildekoden
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 class Project extends AppModel {

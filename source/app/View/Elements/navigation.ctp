@@ -7,11 +7,11 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<?php echo $this->Html->link('<span class="mega-octicon octicon-telescope"></span> <strong>GHREPO</strong>.info', '/', ['escape' => false, 'class' => 'navbar-brand']); ?>
+			<?php echo $this->Html->link('<span class="mega-octicon octicon-telescope"></span> <strong>kilde</strong>koden', '/', ['escape' => false, 'class' => 'navbar-brand']); ?>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#modalAbout" title="About GHREPO.info">About</a></li>
+				<li><a href="#modalAbout" title="About kildekoden">About</a></li>
 			</ul>
 			<?php
 			echo $this->Form->create('lookup', [

@@ -1,13 +1,14 @@
 {
-  "name": "ghrepo-info",
+  "name": "kildekoden",
   "version": "0.9.0",
-  "homepage": "https://github.com/chrisvogt/ghrepo-info",
-  "description": "Demo CakePHP app displays repository information from the GitHub API.",
+  "homepage": "https://github.com/chrisvogt/kildekoden",
+  "description": "Lookup and review repository information.",
   "main": "webroot/index.php",
   "keywords": [
     "cakephp",
-    "prototype",
-    "example"
+    "repository",
+    "github api",
+    "project stats"
   ],
   "authors": [
     "Chris Vogt <mail@chrisvogt.me>"

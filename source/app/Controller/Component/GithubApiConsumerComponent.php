@@ -7,7 +7,7 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @author     		Chris Vogt (http://www.chrisvogt.me)
- * @link          https://github.com/chrisvogt/example-php-challenge
+ * @link          https://github.com/chrisvogt/kildekoden
  * @package       app.Component.GithubApiConsumer
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */

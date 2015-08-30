@@ -1,17 +1,17 @@
 <?php
 /**
- * Home View for GHREPO.info
+ * Home view for Kildekoden
  *
  * Licensed under The MIT License
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
  * @author     		Chris Vogt (http://www.chrisvogt.me)
- * @link          https://github.com/chrisvogt/ghrepo-info
+ * @link          https://github.com/chrisvogt/kildekoden
  * @package       app.Component.GithubApiConsumer
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-$this->assign('title', 'GitHub Repository Viewer');
+$this->assign('title', 'Lookup Repository Information');
 $this->Html->css([
 	'home',
 	'/components/remodal/dist/remodal.css',
@@ -38,7 +38,7 @@ $this->Html->script([
   <h1 class="main-title">Repository <span class="thin">Information</span></h1>
   <div class="github-fork-ribbon-wrapper right-bottom">
       <div class="github-fork-ribbon">
-          <a href="https://github.com/chrisvogt/ghrepo-info">Fork me on GitHub</a>
+          <a href="https://github.com/chrisvogt/kildekoden">Fork me on GitHub</a>
       </div>
   </div>
 </div>
