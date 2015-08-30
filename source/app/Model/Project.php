@@ -37,4 +37,27 @@ class Project extends AppModel {
 		'repository'=>array('type'=>'string'),
 		'created'=>array('type'=>'datetime'),
 	);
+
+	public $actsAs = array(
+	    'Sitemap.Sitemap' => array(
+	        'primaryKey' => '_id',
+	        'loc' => 'buildUrl',
+	        'lastmod' => FALSE,
+	        'changefreq' => 'daily',
+	        'priority' => '0.5',
+	        'conditions' => array(), // Conditions to limit or control the returned results for the sitemap
+	    )
+	);
+
+	/**
+	 * Override Sitemap behavior's buildUrl()
+	 *
+	 * @return string the url for a project
+	 */
+	public function buildUrl($primaryKey, $Model = null) {
+		$data = $this->find('first', ['conditions' => ['_id' => $primaryKey]]);
+		extract($data['Project']);
+		return Router::url(Router::url(DS . $provider . DS . $username . DS . $repository), TRUE);
+	}
+
 }

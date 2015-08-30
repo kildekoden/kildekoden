@@ -12,7 +12,8 @@
     "friendsofcake/crud" : "3.*",
     "josegonzalez/dotenv": "0.3.*",
     "ad7six/dsn": "0.3.*",
-    "ichikaway/cakephp-mongodb": "2.2.x-dev"
+    "ichikaway/cakephp-mongodb": "2.2.x-dev",
+    "loadsys/cakephp_sitemap": "dev-master"
   },
   "require-dev": {
     "cakephp/debug_kit" : "2.2.*",

@@ -78,6 +78,7 @@ App::build(
  */
 CakePlugin::load('Crud');
 CakePlugin::load('Mongodb');
+CakePlugin::load(array('Sitemap' => array('routes' => true, 'bootstrap' => true)));
 
 if (php_sapi_name() !== 'cli' && Configure::read('debug') && in_array('DebugKit', App::objects('plugin'))) {
 	CakePlugin::load('DebugKit');

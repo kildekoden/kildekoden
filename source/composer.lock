@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e97c2f7f014a7c8127b37e56d43fcc6",
+    "hash": "288306c61acd7709bd8c2dfa70ce28b8",
     "packages": [
         {
             "name": "ad7six/dsn",
@@ -371,6 +371,50 @@
                 "php"
             ],
             "time": "2014-05-28 14:40:35"
+        },
+        {
+            "name": "loadsys/cakephp_sitemap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/loadsys/CakePHP-Sitemap.git",
+                "reference": "da4844f15376c403e7e4991ea5a6daa70abdee06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/loadsys/CakePHP-Sitemap/zipball/da4844f15376c403e7e4991ea5a6daa70abdee06",
+                "reference": "da4844f15376c403e7e4991ea5a6daa70abdee06",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Sitemap"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Yost",
+                    "email": "justin.yost@yostivanich.com",
+                    "homepage": "https://github.com/jtyost2",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A CakePHP Plugin for adding automatic XML and HTML Sitemaps to an app",
+            "homepage": "https://github.com/loadsys/CakePHP-Sitemap",
+            "keywords": [
+                "Behavior",
+                "Sitemap",
+                "cakephp",
+                "model"
+            ],
+            "time": "2015-05-10 01:25:48"
         }
     ],
     "packages-dev": [
@@ -847,7 +891,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ichikaway/cakephp-mongodb": 20
+        "ichikaway/cakephp-mongodb": 20,
+        "loadsys/cakephp_sitemap": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
