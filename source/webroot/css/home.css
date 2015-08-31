@@ -52,6 +52,21 @@ img#starthere {
 	top: 14px;
 }
 
+aside#latest {
+	background: rgba(255, 255, 255, .45);
+	border-radius: 8px;
+	padding: 8px;
+	position: absolute;
+	bottom: 14px;
+	left: 14px;
+}
+aside#latest ul {
+	padding: 0;
+}
+aside#latest ul li {
+	list-style: none;
+}
+
 @media only screen and (max-width : 768px) {
 	.large-header .main-title {
 		font-size: 3em;

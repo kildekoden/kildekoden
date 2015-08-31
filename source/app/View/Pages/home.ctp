@@ -36,6 +36,9 @@ $this->Html->script([
 
   <canvas id="demo-canvas"></canvas>
   <h1 class="main-title">Repository <span class="thin">Information</span></h1>
+
+	<?php echo $this->element('latest'); ?>
+  </aside>
   <div class="github-fork-ribbon-wrapper right-bottom">
       <div class="github-fork-ribbon">
           <a href="https://github.com/chrisvogt/kildekoden">Fork me on GitHub</a>

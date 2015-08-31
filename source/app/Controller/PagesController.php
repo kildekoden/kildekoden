@@ -60,6 +60,11 @@ class PagesController extends AppController {
 		}
 		$page = $subpage = $title_for_layout = null;
 
+		if ($this->request->here == '/') {
+			$this->loadModel('Project');
+			$this->set('latest', $this->Project->getLatest(5));
+		}
+
 		if (!empty($path[0])) {
 			$page = $path[0];
 		}

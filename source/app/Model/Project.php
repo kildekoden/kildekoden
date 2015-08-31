@@ -60,4 +60,48 @@ class Project extends AppModel {
 		return Router::url(Router::url(DS . $provider . DS . $username . DS . $repository), TRUE);
 	}
 
+	/**
+	 * Returns the latest n projects.
+	 *
+	 * @param integer $limit
+	 * @return array
+	 */
+	public function getLatest($limit = null) {
+		return $this->find('all', [
+			'limit' => $limit,
+			'order' => ['created' => -1],
+			'fields' => ['provider', 'username', 'repository']
+		]);
+	}
+
+	/**
+	 * Converts any MongoDB date object into a timestamp.
+	 *
+	 * @param array $results
+	 * @param boolean $primary
+	 * @return array
+	 */
+	public function afterFind($results, $primary = false) {
+	    foreach ($results as $key => $val) {
+	    		if (isset($val['Project']['_id'])) { // drop the _id
+	    			unset($results[$key]['Project']['_id']);
+	    		}
+	        if (isset($val['Project']['created'])) { // format the date
+	            $results[$key]['Project']['created'] = $this->dateFormatAfterFind(
+	                $val['Project']['created']
+	            );
+	        }
+	    }
+	    return $results;
+	}
+
+	/**
+	 * Extracts the timestamp.
+	 *
+	 * @return int
+	*/
+	public function dateFormatAfterFind(MongoDate $MongoDate) {
+		return $MongoDate->sec;
+	}
+
 }
