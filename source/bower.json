@@ -23,6 +23,7 @@
     "tests"
   ],
   "dependencies": {
+    "raf.js": "~0.0.4",
     "remodal": "VodkaBears/Remodal#~1.0.2"
   }
 }

@@ -18,7 +18,7 @@
 	z-index: 1;
 }
 #large-header {
-	background-image: url('http://res.cloudinary.com/chrisvogt/image/upload/v1439252118/ghrepo-info/photo/milky-way1200.jpg');
+	background-position: bottom;
 }
 .main-title {
 	position: absolute;

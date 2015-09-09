@@ -20,10 +20,11 @@ $this->Html->css([
 	],
 	['inline' => false]);
 $this->Html->script([
-	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js',
-	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js',
-	'http://www.marcoguglielmelli.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js',
+	'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js',
+	'/components/raf.js/raf.min.js',
+	'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js',
 	'animated-background',
+	'https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js',
 	'/components/remodal/dist/remodal.min.js'
 ], ['block' => 'scriptBottom']);
 ?>
