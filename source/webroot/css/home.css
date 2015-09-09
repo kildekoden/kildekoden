@@ -53,8 +53,14 @@ img#starthere {
 }
 
 aside#latest {
-	background: rgba(255, 255, 255, .45);
-	border-radius: 8px;
+	background: url(https://cdn.rawgit.com/chrisvogt/chrisvogt.me/develop/img/bg-delaunay.png) -550px -200px;
+	border-left: 1px solid #efefef;
+	border-top: 1px solid #fefefe;
+	border-right: 1px solid #cecece;
+	border-bottom: 1px solid #dedede;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	color: #efefef;
 	padding: 8px;
 	position: absolute;
 	bottom: 14px;
@@ -65,6 +71,13 @@ aside#latest ul {
 }
 aside#latest ul li {
 	list-style: none;
+}
+aside#latest a {
+	color: #bebebe;
+}
+aside#latest a:hover {
+	color: #fefefe;
+	text-decoration: none;
 }
 
 @media only screen and (max-width : 768px) {
