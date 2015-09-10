@@ -1,0 +1,22 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+
+services:
+  - mongodb
+
+before_script:
+  - cd source
+  - composer self-update
+  - composer install
+  - pwd
+  - cd && composer global require 'phpunit/phpunit=3.7.38' && cd -
+  - sudo ln -s ~/.composer/vendor/phpunit/phpunit/PHPUnit ./vendor/PHPUnit
+
+script:
+  - cd app/Console && sudo ./cake test app AllAppTests --stderr
+
+notifications:
+  email: false
