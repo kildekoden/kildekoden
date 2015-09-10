@@ -47,8 +47,8 @@
 
 		echo $this->Html->meta(['name' => 'og:title', 'content' => 'Kildekoden repository browser'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'og:description', 'content' => h($appDescription)], null, ['inline' => false]);
-		echo $this->Html->meta(['name' => 'og:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/kildekoden/master/source/webroot/img/screenshot.home.jpg'], null, ['inline' => false]);
-		echo $this->Html->meta(['name' => 'og:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/kildekoden/master/source/webroot/img/screenshot.result.jpg'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:image', 'content' => $this->Html->assetUrl('/img/banner.jpg', ['fullBase' => true])], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:image', 'content' => $this->Html->assetUrl('/img/screenshot.result.jpg', ['fullBase' => true])], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'og:type', 'content' => 'website'], null, ['inline' => false]);
 
 		echo $this->Html->meta(['name' => 'twitter:card', 'content' => 'summary_large_image'], null, ['inline' => false]);
@@ -56,7 +56,7 @@
 		echo $this->Html->meta(['name' => 'twitter:creator', 'content' => '@C1V0'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:site', 'content' => '@kildekoden'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:description', 'content' => h($appDescription)], null, ['inline' => false]);
-		echo $this->Html->meta(['name' => 'twitter:image', 'content' => 'https://cdn.rawgit.com/chrisvogt/kildekoden/master/source/webroot/img/screenshot.home.jpg'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:image', 'content' => $this->Html->assetUrl('/img/banner.jpg', ['fullBase' => true])], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:site', 'content' => '<?php echo Router::url( $this->here, true ); ?>'], null, ['inline' => false]);
 
 		echo $this->fetch('meta');
