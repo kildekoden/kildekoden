@@ -46,13 +46,3 @@ $this->Html->script([
       </div>
   </div>
 </div>
-<script>
-$(document).ready(function() {
-	/**
-	 * Use backstretch.js for the home page background image.
-	 */
-	if ($("#large-header").length) {
-		$("#large-header").backstretch("https://res.cloudinary.com/chrisvogt/image/upload/v1441823403/projects/kildekoden/telescope-sky.jpg", {centeredY: false});
-	}
-});
-</script>

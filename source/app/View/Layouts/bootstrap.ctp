@@ -100,6 +100,15 @@
 
 		<?php echo $this->element('modal/about'); ?>
     <?php echo $this->fetch('scriptBottom'); ?>
+
+    <?php if ($this->request->here == '/') : ?>
+		<script>
+		$(document).ready(function() {
+			// Init jQuery Backstretch
+			$("#large-header").backstretch("https://res.cloudinary.com/chrisvogt/image/upload/v1441823403/projects/kildekoden/telescope-sky.jpg", {centeredY: false});
+		});
+		</script>
+		<?php endif; ?>
     <?php if (env('ANALYTICS')) echo $this->element('analytics'); ?>
   </body>
 </html>
