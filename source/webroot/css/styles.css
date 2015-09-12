@@ -32,7 +32,7 @@ body {
  */
 .navbar-fixed-top {
 	border: 0;
-	background: url('https://cdn.rawgit.com/chrisvogt/chrisvogt.me/develop/img/bg-delaunay.png') top center;
+	background: url('https://cdn.rawgit.com/chrisvogt/chrisvogt.me/master/img/bg-delaunay.png') top center;
 	background-size: cover;
 }
 .navbar-inverse .navbar-brand,
