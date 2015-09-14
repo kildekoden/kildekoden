@@ -26,6 +26,12 @@ body {
 .keyup.valid {
 	color: green;
 }
+.octicon-heart {
+	color: #b10000;
+}
+.twitter-blue {
+	color: #55acee;
+}
 
 /*
  * Top navigation

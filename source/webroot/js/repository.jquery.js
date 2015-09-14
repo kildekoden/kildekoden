@@ -19,6 +19,7 @@ $(function() {
         url: "https://api.github.com/repos/" + username + "/" + repository,
         success: function(data) {
             renderStats(data);
+            renderDetails(data);
         }
     });
 
@@ -31,6 +32,10 @@ $(function() {
         for (var i = 0; i < data.length; i++) {
             renderRow(data[i]);
         }
+    }
+
+    function renderDetails(data) {
+    	$('p#desc').html(data['description']);
     }
 
     /**
