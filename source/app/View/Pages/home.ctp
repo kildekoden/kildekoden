@@ -24,7 +24,6 @@ $this->Html->script([
 	'/components/raf.js/raf.min.js',
 	'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js',
 	'animated-background',
-	'https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js',
 	'/components/remodal/dist/remodal.min.js'
 ], ['block' => 'scriptBottom']);
 ?>
