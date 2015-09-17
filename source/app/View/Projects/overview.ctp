@@ -33,7 +33,7 @@ var repository = '<?php echo $repository; ?>';
 			/
 			<a href="https://github.com/<?php echo $username . DS . $repository; ?>" title="<?php echo $repository; ?> on GitHub"><?php echo $repository; ?></a>
 			</h1>
-			<div class="row stats">
+			<div class="row stats col-md-6 pull-right">
 				<div class="col-xs-6 col-sm-3 stat stat-watchers">
 					<a href="https://github.com/<?php echo $username . DS . $repository; ?>/watchers" title="Watchers - <?php echo $username . '/' . $repository; ?> on GitHub" class="btn btn-default btn-block hvr-underline-from-center">
 						<h4><span class="mega-octicon octicon-eye"></span></h4>
@@ -59,6 +59,7 @@ var repository = '<?php echo $repository; ?>';
 					</a>
 				</div>
 			</div>
+			<p id="desc" class="lead" itemprop="description"></p>
 			<h2 class="sub-header">Recent commits</h2>
 			<div class="table-responsive">
 				<table class="table table-striped">
@@ -79,6 +80,11 @@ var repository = '<?php echo $repository; ?>';
 					</tbody>
 				</table>
 			</div>
+		<hr />
+		<div>
+			<p class="pull-left"><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by <span class="twitter-blue">@</span><span class="octicon octicon-twitter"></span><a href="https://twitter.com/c1v0" title="Chris Vogt on Twitter">C1V0</a></p>
+			<p class="pull-right">View source on <a href="https://github.com/kildekoden/kildekoden" title="Kildekoden source code on Twitter"><span class="octicon octicon-logo-github"></span></a>.</p>
+		</div>
 		</div>
 	</div>
 </div>
