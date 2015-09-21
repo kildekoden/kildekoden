@@ -44,6 +44,7 @@ $(function() {
      * @param {array} data - Data for this row.
      */
     function renderRow(data) {
+        var bio = data['author_username'] + ' on GitHub';
         $("#commits").append($('<tr>')
             .append($('<td>')
                 .append($('<a>')
@@ -55,8 +56,8 @@ $(function() {
             .append($('<td>')
                 .append($('<a>')
                     .attr('href', data['author_url'])
-                    .attr('title', data['author_username'] + ' on GitHub')
-                    .text(data['author_username'])
+                    .attr('title', bio)
+                    .html(renderAvatar(data['author_avatar'], data['author_username']) + ' ' + data['author_username'])
                 )
             )
             .append($('<td>')
@@ -78,5 +79,9 @@ $(function() {
         $('.stat-forks .count').html(data.forks_count);
         $('.stat-stars .count').html(data.stargazers_count);
         $('.stat-issues .count').html(data.open_issues_count);
+    }
+
+    function renderAvatar(href, uname) {
+        return '<img src="' + href + '" class="img img-circle" alt="' + uname + '\'s avatar" height="18px">';
     }
 });
