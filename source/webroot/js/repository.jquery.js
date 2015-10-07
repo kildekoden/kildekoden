@@ -57,7 +57,16 @@ $(function() {
                 .append($('<a>')
                     .attr('href', data['author_url'])
                     .attr('title', bio)
-                    .html(renderAvatar(data['author_avatar'], data['author_username']) + ' ' + data['author_username'])
+                    .html(
+                        function () {
+                            if (data['author_avatar']) {
+                                return renderAvatar(data['author_avatar'], data['author_username'])
+                                + ' ' + data['author_username'];
+                            } else {
+                                return ((data['author_username']) ? data['author_username'] : "<em>Undefined</em>");
+                            }
+                        }
+                    )
                 )
             )
             .append($('<td>')
