@@ -11,10 +11,6 @@ body {
 /*
  * Global add-ons
  */
-.sub-header {
-	padding-bottom: 10px;
-	border-bottom: 1px solid #eee;
-}
 .keyup {
 	position: relative;
 	left: -22px;
@@ -48,6 +44,13 @@ body {
 .navbar .octicon-telescope {
 	color: #fff;
 	font-size: 24px;
+}
+
+/**
+ * Elements
+ */
+.table-responsive {
+	width: 100%;
 }
 
 /*
