@@ -17,10 +17,8 @@ https://github.com/kildekoden/kildekoden
 	/**
 	 * Common stylehseets
 	 */
-		$css_app = Configure::read('debug') > 0 ? '/fos/css/app' : 'app.min';
-		$this->Html->css([
-			$css_app
-		], ['inline' => false]);
+		$css_app = Configure::read('debug') > 0 ? ['/fos/components/bootstrap/dist/css/bootstrap.min.css', '/fos/css/styles.css', '/fos/components/octicons/octicons/octicons.css'] : 'app.min';
+		$this->Html->css($css_app, ['inline' => false]);
 
 	/**
 	 * Common scripts
