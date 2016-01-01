@@ -1,21 +1,20 @@
 /**
- * Overrides
- */
-.navbar-fixed-top {
-	border-bottom: 1px solid #aeaeae!important;
-}
-
-/**
  * Canvas
  */
 .large-header {
 	position: relative;
 	width: 100%;
-	background: #333;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181818+0,000000+100 */
+	background: #181818; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #181818 0%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #181818 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #181818 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 #large-header {
 	background-position: bottom;
@@ -53,18 +52,13 @@ img#starthere {
 }
 
 aside#latest {
-	background: url(https://cdn.rawgit.com/chrisvogt/chrisvogt.me/master/img/bg-delaunay.png) -550px -200px;
-	border-left: 1px solid #efefef;
-	border-top: 1px solid #fefefe;
-	border-right: 1px solid #cecece;
-	border-bottom: 1px solid #dedede;
-	border-top-left-radius: 8px;
-	border-bottom-right-radius: 8px;
 	color: #efefef;
 	padding: 8px;
 	position: absolute;
 	bottom: 14px;
 	left: 14px;
+
+	background: #0091EA;
 }
 aside#latest ul {
 	padding: 0;

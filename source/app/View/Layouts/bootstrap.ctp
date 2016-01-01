@@ -5,14 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
-			brought to you by...
- ██████╗ ██╗██╗   ██╗ ██████╗
-██╔════╝███║██║   ██║██╔═████╗
-██║     ╚██║██║   ██║██║██╔██║
-██║      ██║╚██╗ ██╔╝████╔╝██║
-╚██████╗ ██║ ╚████╔╝ ╚██████╔╝
- ╚═════╝ ╚═╝  ╚═══╝   ╚═════╝
-		 chrisvogt.me | @c1v0
+┬┌─┬┬  ┌┬┐┌─┐┬┌─┌─┐┌┬┐┌─┐
+├┴┐││   ││├┤ ├┴┐│ │ ││├┤
+┴ ┴┴┴─┘─┴┘└─┘┴ ┴└─┘─┴┘└─┘
+
+https://github.com/kildekoden/kildekoden
 -->
 		<title><?php echo $this->fetch('title'); ?> | <?php echo env(APP_NAME); ?></title>
 
@@ -20,23 +17,15 @@
 	/**
 	 * Common stylehseets
 	 */
+		$css_app = Configure::read('debug') > 0 ? '/fos/css/app' : 'app.min';
 		$this->Html->css([
-			'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css',
-			'styles',
-			'/components/remodal/dist/remodal.css',
-			'/components/remodal/dist/remodal-default-theme.css',
-			'https://cdnjs.cloudflare.com/ajax/libs/octicons/2.4.1/octicons.min.css'
+			$css_app
 		], ['inline' => false]);
 
 	/**
 	 * Common scripts
 	 */
-		$this->Html->script([
-			'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',
-			'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js',
-			'common.jquery',
-			'/components/remodal/dist/remodal.min.js'
-		], ['block' => 'script']);
+		$this->Html->script(['libraries'], ['block' => 'script']);
 
 		$appDescription = 'Lookup repository information from GitHub using this free, open source CakePHP app.';
 
@@ -45,14 +34,14 @@
 		echo $this->Html->meta('description', h($appDescription), ['inline' => false]);
 		echo $this->Html->meta('keywords', 'GitHub, repository, repo, source code, repository information', ['inline' => false]);
 
-		echo $this->Html->meta(['name' => 'og:title', 'content' => 'Kildekoden repository browser'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'og:title', 'content' => 'Kildekoden – explore open source projects'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'og:description', 'content' => h($appDescription)], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'og:image', 'content' => $this->Html->assetUrl('/img/banner.jpg', ['fullBase' => true])], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'og:image', 'content' => $this->Html->assetUrl('/img/screenshot.result.jpg', ['fullBase' => true])], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'og:type', 'content' => 'website'], null, ['inline' => false]);
 
 		echo $this->Html->meta(['name' => 'twitter:card', 'content' => 'summary_large_image'], null, ['inline' => false]);
-		echo $this->Html->meta(['name' => 'twitter:title', 'content' => 'Kildekoden repository browser'], null, ['inline' => false]);
+		echo $this->Html->meta(['name' => 'twitter:title', 'content' => 'Kildekoden – explore open source projects'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:creator', 'content' => '@C1V0'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:site', 'content' => '@kildekoden'], null, ['inline' => false]);
 		echo $this->Html->meta(['name' => 'twitter:description', 'content' => h($appDescription)], null, ['inline' => false]);
@@ -101,16 +90,5 @@
 		<?php echo $this->element('modal/about'); ?>
     <?php echo $this->fetch('scriptBottom'); ?>
     <?php if (env('ANALYTICS')) echo $this->element('analytics'); ?>
-
-    <?php if ($this->request->here == '/') : ?>
-		<script>
-		$(function() {
-			$('#large-header').css({
-				'background': 'url(https://res.cloudinary.com/chrisvogt/image/upload/v1441823403/projects/kildekoden/telescope-sky.jpg) #131313',
-				'background-size': 'cover',
-			});
-		});
-		</script>
-		<?php endif; ?>
   </body>
 </html>

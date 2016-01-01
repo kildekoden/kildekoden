@@ -1,0 +1,36 @@
+{
+  "name": "kildekoden",
+  "version": "0.9.1",
+  "description": "Source code repository explorer. Find and explore open source projects.",
+  "license": "MIT",
+  "repository": "kildekoden/kildekoden",
+  "scripts": {
+    "postinstall": "bower cache clean && bower install"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.3.2"
+  },
+  "devDependencies": {
+    "load-grunt-tasks": "~3.3.0",
+    "node-sass": "~3.4.0",
+    "grunt-sass": "~1.1.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.13.0",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-connect": "~0.11.2",
+    "grunt-wiredep": "~2.0.0",
+    "grunt-usemin": "~3.0.0",
+    "grunt-contrib-imagemin": "1.0.0",
+    "grunt-newer": "~1.1.1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "private": true
+}

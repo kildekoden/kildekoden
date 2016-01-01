@@ -24,6 +24,8 @@
   ],
   "dependencies": {
     "raf.js": "~0.0.4",
-    "remodal": "VodkaBears/Remodal#~1.0.2"
+    "remodal": "VodkaBears/Remodal#~1.0.2",
+    "octicons": "~3.3.0",
+    "bootstrap": "~3.3.6"
   }
 }

@@ -10,7 +10,7 @@ $this->Html->css([
 $this->Html->script([ // scripts for this view
 		'https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js',
 		'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js',
-		'repository.jquery'
+		'repository.min'
 	],
 	array('block' => 'scriptBottom'));
 ?>

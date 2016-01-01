@@ -1,10 +1,9 @@
-/*
- * ghrepo-info
+/**
+ * Kildekoden
  *
- * Based on http://getbootstrap.com/examples/dashboard/
+ * github.com/kildekoden/kildekoden
  */
 
-/* Move down content because we have a fixed navbar that is 50px tall */
 body {
 	padding-top: 50px;
 }
@@ -38,8 +37,9 @@ body {
  */
 .navbar-fixed-top {
 	border: 0;
-	background: url('https://cdn.rawgit.com/chrisvogt/chrisvogt.me/master/img/bg-delaunay.png') top center;
-	background-size: cover;
+	/* background: url('https://cdn.rawgit.com/chrisvogt/chrisvogt.me/master/img/bg-delaunay.png') top center; */
+	/* background-size: cover; */
+	background: #01579B;
 }
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav>li>a {
