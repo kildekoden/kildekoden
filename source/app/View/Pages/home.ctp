@@ -12,19 +12,13 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 $this->assign('title', 'Lookup Repository Information');
-$this->Html->css([
-	'home',
-	'/components/remodal/dist/remodal.css',
-	'/components/remodal/dist/remodal-default-theme.css',
-	'https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css'
-	],
-	['inline' => false]);
+$css_home = Configure::read('debug') > 0 ? '/fos/css/home' : 'home.min';
+
+$this->Html->css([$css_home],['inline' => false]);
 $this->Html->script([
 	'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js',
-	'/components/raf.js/raf.min.js',
 	'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js',
-	'animated-background',
-	'/components/remodal/dist/remodal.min.js'
+	'animated-background.min',
 ], ['block' => 'scriptBottom']);
 ?>
 <div id="large-header" class="large-header">
