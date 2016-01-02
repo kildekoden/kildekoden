@@ -1,8 +1,8 @@
 {
-  "name": "friendsofcake/app-template",
-  "description": "An empty CakePHP 2.5 application",
+  "name": "kildekoden",
+  "description": "Source code repository explorer. Lookup and explore open source projects.",
   "type": "project",
-  "keywords" : [],
+  "keywords" : ["open source"],
   "homepage" : "http://cakephp.org",
   "license" : "MIT",
   "require" : {
@@ -13,7 +13,7 @@
     "josegonzalez/dotenv": "0.3.*",
     "ad7six/dsn": "0.3.*",
     "ichikaway/cakephp-mongodb": "2.2.x-dev",
-    "loadsys/cakephp_sitemap": "dev-master"
+    "loadsys/cakephp_sitemap": "~1.0"
   },
   "require-dev": {
     "cakephp/debug_kit" : "2.2.*",

@@ -31,16 +31,17 @@ class Project extends AppModel {
  *
  * @var array
  */
-	var $mongoSchema = array(
-		'provider' => array('type'=>'string'),
-		'username' => array('type'=>'string'),
-		'repository'=>array('type'=>'string'),
-		'created'=>array('type'=>'datetime'),
-	);
+	var $mongoSchema = [
+		'_id' 		=> ['type' => 'string'],
+		'provider' 	=> ['type' => 'string'],
+		'username' 	=> ['type' => 'string'],
+		'repository'=> ['type' => 'string'],
+		'created'	=> ['type' => 'datetime']
+	];
 
 	public $actsAs = array(
 	    'Sitemap.Sitemap' => array(
-	        'primaryKey' => '_id',
+	        'primaryKey' => 'repository',
 	        'loc' => 'buildUrl',
 	        'lastmod' => FALSE,
 	        'changefreq' => 'daily',
@@ -55,7 +56,7 @@ class Project extends AppModel {
 	 * @return string the url for a project
 	 */
 	public function buildUrl($primaryKey, $Model = null) {
-		$data = $this->find('first', ['conditions' => ['_id' => $primaryKey]]);
+		$data = $this->find('first', ['conditions' => ['repository' => $primaryKey]]);
 		extract($data['Project']);
 		return Router::url(Router::url(DS . $provider . DS . $username . DS . $repository), TRUE);
 	}

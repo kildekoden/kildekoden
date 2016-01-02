@@ -74,12 +74,13 @@ class ProjectsController extends AppController {
 			'username' 		=> $username,
 			'repository' 	=> $repository
 		]]);
+
 		if (!$data && count($this->commits) >= 1) { // if not, store it
-	    $saved = $this->Project->save(['Project' => [
-	    	'provider' 		=> 'gh', // force GitHub, for now
-	    	'username' 		=> $username,
-  	    	'repository' 	=> $repository
-      ]]);
+		    $saved = $this->Project->save(['Project' => [
+		    	'provider' 		=> 'gh', // force GitHub, for now
+		    	'username' 		=> $username,
+	  	    	'repository' 	=> $repository
+	      	]]);
 		}
 
 		// set the data
