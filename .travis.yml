@@ -16,7 +16,7 @@ before_script:
   - sudo ln -s ~/.composer/vendor/phpunit/phpunit/PHPUnit ./vendor/PHPUnit
 
 script:
-  - cd app/Console && sudo ./cake test app AllAppTests --stderr
+  - cd app/Console && ./cake test app AllAppTests --stderr
 
 notifications:
   email: false

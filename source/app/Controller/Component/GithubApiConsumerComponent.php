@@ -11,7 +11,6 @@
  * @package       app.Component.GithubApiConsumer
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
 App::uses('Component', 'Controller');
 App::uses('HttpSocket', 'Network/Http');
 
