@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "288306c61acd7709bd8c2dfa70ce28b8",
+    "hash": "1124dddfcbad148a4b5aba0902909c53",
+    "content-hash": "e7941f8d96dcfc792ea9e41249114c3b",
     "packages": [
         {
             "name": "ad7six/dsn",
@@ -50,16 +51,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.5.8",
+            "version": "2.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "667e2be2d27ad210769f919fefdb35e45ab354d5"
+                "reference": "64c8f8b28fc4147e5de7a1478107ebbafce0fb71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/667e2be2d27ad210769f919fefdb35e45ab354d5",
-                "reference": "667e2be2d27ad210769f919fefdb35e45ab354d5",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/64c8f8b28fc4147e5de7a1478107ebbafce0fb71",
+                "reference": "64c8f8b28fc4147e5de7a1478107ebbafce0fb71",
                 "shasum": ""
             },
             "require": {
@@ -89,21 +90,24 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-12-23 16:21:16"
+            "time": "2015-11-06 03:26:10"
         },
         {
             "name": "composer/installers",
-            "version": "dev-master",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41"
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
-                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
+                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -113,9 +117,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -184,20 +188,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-06-13 15:30:38"
+            "time": "2015-10-29 23:28:48"
         },
         {
             "name": "friendsofcake/crud",
-            "version": "3.0.x-dev",
+            "version": "3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfCake/crud.git",
-                "reference": "e22c1563a51d86aac0d5054beee28b4afb60c802"
+                "reference": "c3976f1478c681b0bbc132ec3a3e82c3984eeed5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/049fc2ed6dfd753f38cbf5f35c713d10345af3a3",
-                "reference": "e22c1563a51d86aac0d5054beee28b4afb60c802",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/c3976f1478c681b0bbc132ec3a3e82c3984eeed5",
+                "reference": "c3976f1478c681b0bbc132ec3a3e82c3984eeed5",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +254,7 @@
                 "scaffolding",
                 "update"
             ],
-            "time": "2015-06-04 01:53:58"
+            "time": "2015-04-18 19:08:17"
         },
         {
             "name": "ichikaway/cakephp-mongodb",
@@ -374,20 +378,20 @@
         },
         {
             "name": "loadsys/cakephp_sitemap",
-            "version": "dev-master",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/loadsys/CakePHP-Sitemap.git",
-                "reference": "da4844f15376c403e7e4991ea5a6daa70abdee06"
+                "reference": "6e2eaa06acd033316a3d863d38dacec00fb66d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loadsys/CakePHP-Sitemap/zipball/da4844f15376c403e7e4991ea5a6daa70abdee06",
-                "reference": "da4844f15376c403e7e4991ea5a6daa70abdee06",
+                "url": "https://api.github.com/repos/loadsys/CakePHP-Sitemap/zipball/6e2eaa06acd033316a3d863d38dacec00fb66d3c",
+                "reference": "6e2eaa06acd033316a3d863d38dacec00fb66d3c",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "~1.0",
+                "composer/installers": "*",
                 "php": ">=5.3.0"
             },
             "type": "cakephp-plugin",
@@ -402,34 +406,32 @@
                 {
                     "name": "Justin Yost",
                     "email": "justin.yost@yostivanich.com",
-                    "homepage": "https://github.com/jtyost2",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jtyost2"
                 }
             ],
-            "description": "A CakePHP Plugin for adding automatic XML and HTML Sitemaps to an app",
+            "description": "A CakePHP Plugin for adding automatic XML and HTML Sitemaps to an CakePHP application",
             "homepage": "https://github.com/loadsys/CakePHP-Sitemap",
             "keywords": [
                 "Behavior",
-                "Sitemap",
                 "cakephp",
                 "model"
             ],
-            "time": "2015-05-10 01:25:48"
+            "time": "2014-11-10 07:16:10"
         }
     ],
     "packages-dev": [
         {
             "name": "cakephp/debug_kit",
-            "version": "2.2.x-dev",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "43ed7d47167f38f87b3f3a7acfea35ac7241d342"
+                "reference": "6c318a779b63bd567fd17811aecc7654a74bbec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/43ed7d47167f38f87b3f3a7acfea35ac7241d342",
-                "reference": "43ed7d47167f38f87b3f3a7acfea35ac7241d342",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/6c318a779b63bd567fd17811aecc7654a74bbec5",
+                "reference": "6c318a779b63bd567fd17811aecc7654a74bbec5",
                 "shasum": ""
             },
             "require": {
@@ -465,11 +467,11 @@
                 "debug",
                 "kit"
             ],
-            "time": "2015-05-30 13:10:48"
+            "time": "2015-09-13 20:07:55"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "1.2.x-dev",
+            "version": "1.2.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
@@ -530,7 +532,7 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "dev-master",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
@@ -577,16 +579,16 @@
         },
         {
             "name": "phpunit/php-text-template",
-            "version": "dev-master",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "f87a4b06e9124e7ad58572ff5f481d79423d51e0"
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/f87a4b06e9124e7ad58572ff5f481d79423d51e0",
-                "reference": "f87a4b06e9124e7ad58572ff5f481d79423d51e0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "shasum": ""
             },
             "require": {
@@ -614,11 +616,11 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21 13:52:25"
+            "time": "2015-06-21 13:50:34"
         },
         {
             "name": "phpunit/php-timer",
-            "version": "dev-master",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
@@ -783,34 +785,26 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "1.2.x-dev",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "c39c4511c3b007539eb170c32cbc2af49a07351a"
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/c39c4511c3b007539eb170c32cbc2af49a07351a",
-                "reference": "c39c4511c3b007539eb170c32cbc2af49a07351a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5794e3c5c5ba0fb037b11d8151add2a07fa82875",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "phpunit/php-text-template": ">=1.1.1@stable"
             },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*@dev"
-            },
             "suggest": {
                 "ext-soap": "*"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
             "autoload": {
                 "classmap": [
                     "PHPUnit/"
@@ -836,27 +830,24 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2014-02-16 12:43:56"
+            "time": "2013-01-13 10:24:48"
         },
         {
             "name": "symfony/yaml",
-            "version": "2.8.x-dev",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml.git",
-                "reference": "000e7fc2653335cd42c6d21405dac1c74224a387"
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1a0bd40f71908db4c9d44d308e0008cc44fc5f2f",
-                "reference": "000e7fc2653335cd42c6d21405dac1c74224a387",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966",
+                "reference": "ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
             },
             "type": "library",
             "extra": {
@@ -867,7 +858,10 @@
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Yaml\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -885,16 +879,15 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 14:16:54"
+            "time": "2015-12-26 13:37:56"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ichikaway/cakephp-mongodb": 20,
-        "loadsys/cakephp_sitemap": 20
+        "ichikaway/cakephp-mongodb": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.4"
