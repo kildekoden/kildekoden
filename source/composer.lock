@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1124dddfcbad148a4b5aba0902909c53",
-    "content-hash": "e7941f8d96dcfc792ea9e41249114c3b",
+    "hash": "00c0af328eb6193d4358ccc60913f5c1",
+    "content-hash": "e53d7fe2ac52742f30e68e12a1115d32",
     "packages": [
         {
             "name": "ad7six/dsn",
-            "version": "0.3.1",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AD7six/php-dsn.git",
-                "reference": "649b42a6cc5878dacef8a3b41efbf72e133440c0"
+                "reference": "cb75d8d6660a5110876574815fbb4ad65d576d71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AD7six/php-dsn/zipball/649b42a6cc5878dacef8a3b41efbf72e133440c0",
-                "reference": "649b42a6cc5878dacef8a3b41efbf72e133440c0",
+                "url": "https://api.github.com/repos/AD7six/php-dsn/zipball/cb75d8d6660a5110876574815fbb4ad65d576d71",
+                "reference": "cb75d8d6660a5110876574815fbb4ad65d576d71",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
                 }
             ],
             "description": "A utility for parsing and generating service DSNs",
-            "time": "2014-05-31 16:17:08"
+            "time": "2015-03-28 07:40:11"
         },
         {
             "name": "cakephp/cakephp",
@@ -331,20 +331,24 @@
         },
         {
             "name": "josegonzalez/dotenv",
-            "version": "0.3.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josegonzalez/php-dotenv.git",
-                "reference": "7979bc305f3a9a197d94db5f5d24d51ff7ab0871"
+                "reference": "fd0b23a62995b800f5c44b720ef3f3ce2f1e545f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/7979bc305f3a9a197d94db5f5d24d51ff7ab0871",
-                "reference": "7979bc305f3a9a197d94db5f5d24d51ff7ab0871",
+                "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/fd0b23a62995b800f5c44b720ef3f3ce2f1e545f",
+                "reference": "fd0b23a62995b800f5c44b720ef3f3ce2f1e545f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "library",
             "autoload": {
@@ -374,7 +378,7 @@
                 "dotenv",
                 "php"
             ],
-            "time": "2014-05-28 14:40:35"
+            "time": "2015-12-25 13:30:53"
         },
         {
             "name": "loadsys/cakephp_sitemap",
