@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "00c0af328eb6193d4358ccc60913f5c1",
-    "content-hash": "e53d7fe2ac52742f30e68e12a1115d32",
+    "hash": "c77b6cd97d6adc0b98c50d6f6a7e741d",
+    "content-hash": "4642c3cd43914300ebb3a8ce0c3d847a",
     "packages": [
         {
             "name": "ad7six/dsn",
@@ -331,24 +331,20 @@
         },
         {
             "name": "josegonzalez/dotenv",
-            "version": "1.2.1",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josegonzalez/php-dotenv.git",
-                "reference": "fd0b23a62995b800f5c44b720ef3f3ce2f1e545f"
+                "reference": "7979bc305f3a9a197d94db5f5d24d51ff7ab0871"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/fd0b23a62995b800f5c44b720ef3f3ce2f1e545f",
-                "reference": "fd0b23a62995b800f5c44b720ef3f3ce2f1e545f",
+                "url": "https://api.github.com/repos/josegonzalez/php-dotenv/zipball/7979bc305f3a9a197d94db5f5d24d51ff7ab0871",
+                "reference": "7979bc305f3a9a197d94db5f5d24d51ff7ab0871",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "satooshi/php-coveralls": "dev-master",
-                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "library",
             "autoload": {
@@ -378,7 +374,7 @@
                 "dotenv",
                 "php"
             ],
-            "time": "2015-12-25 13:30:53"
+            "time": "2014-05-28 14:40:35"
         },
         {
             "name": "loadsys/cakephp_sitemap",
