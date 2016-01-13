@@ -1,3 +1,8 @@
+[![Build status](https://img.shields.io/travis/kildekoden/kildekoden.svg?branch=master&style=flat-square)](https://travis-ci.org/kildekoden/kildekoden)
+[![GitHub release](https://img.shields.io/github/release/kildekoden/kildekoden.svg?style=flat-square)](https://github.com/kildekoden/kildekoden/releases)
+[![GitHub license](https://img.shields.io/github/license/kildekoden/kildekoden.svg?style=flat-square)](https://github.com/kildekoden/kildekoden/blob/master/LICENSE)
+
+
 # kildekoden
 
 Lookup and explore open source repositories.
@@ -28,16 +33,7 @@ Copy the [default configuration file](source/app/Config/.env.default) to `.env`.
 
 ## License
 
-[MIT License](LICENSE.md)
-
-Copyright (c) 2015 Chris Vogt https://www.chrisvogt.me
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+[MIT](LICENSE) © [Chris Vogt](https://www.chrisvogt.me).
 
 ## Built with
 
