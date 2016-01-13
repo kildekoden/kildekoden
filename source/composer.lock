@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c77b6cd97d6adc0b98c50d6f6a7e741d",
-    "content-hash": "4642c3cd43914300ebb3a8ce0c3d847a",
+    "hash": "788769d06f997d88ab7ed344d3c2f653",
+    "content-hash": "1640d685c33c3b1b57428c54207cb795",
     "packages": [
         {
             "name": "ad7six/dsn",
@@ -51,24 +51,25 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "2.6.12",
+            "version": "2.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "64c8f8b28fc4147e5de7a1478107ebbafce0fb71"
+                "reference": "2ee72e2ad2340d707901dc7a5e8520f1cb235916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/64c8f8b28fc4147e5de7a1478107ebbafce0fb71",
-                "reference": "64c8f8b28fc4147e5de7a1478107ebbafce0fb71",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/2ee72e2ad2340d707901dc7a5e8520f1cb235916",
+                "reference": "2ee72e2ad2340d707901dc7a5e8520f1cb235916",
                 "shasum": ""
             },
             "require": {
                 "ext-mcrypt": "*",
-                "php": ">=5.2.8"
+                "php": ">=5.3.0"
             },
             "require-dev": {
-                "cakephp/debug_kit": "2.2.*",
+                "cakephp/cakephp-codesniffer": "^1.0.0",
+                "cakephp/debug_kit": "^2.2.0",
                 "phpunit/phpunit": "3.7.*"
             },
             "bin": [
@@ -90,7 +91,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-11-06 03:26:10"
+            "time": "2015-12-21 19:55:52"
         },
         {
             "name": "composer/installers",
@@ -883,7 +884,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "ichikaway/cakephp-mongodb": 20
     },
