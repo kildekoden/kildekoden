@@ -22,12 +22,5 @@
   "prefer-stable": true,
   "config": {
     "preferred-install": "dist"
-  },
-  "extra": {
-    "heroku": {
-      "framework": "cakephp2",
-      "document-root": "webroot",
-      "index-document": "index.php"
-    }
   }
 }
